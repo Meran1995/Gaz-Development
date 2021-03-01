@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@500&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Newspaper", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 20px;
+	box-sizing: border-box;
+}
+/* img{
+	height: 100vh;
+	background: url(./images/Skyline_Almere.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+} */
+/* Navbar */
+.header-transparent {
+	background-color:rgba(0, 0, 0, 0.1);
+	width: 100%;
+	position: fixed;
+}
+.container {
+	padding: 0;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+.fa-home,
+.nav-links {
+	color: #fff;
+}
+.main-menu ul.navbar-nav li {
+	margin-left: 25px;
+	font-size: 20px;
+	font-weight: 600;
+}
+#flex-right {
+	justify-content: flex-end;
+}
+
+/* Home */
+.background-image{
+	height: 100vh;
+	background: url(./images/Skyline_Almere.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+/* About */
+/* Projects */
+/* Skills */
+/* Tools */
+/* Contact */
