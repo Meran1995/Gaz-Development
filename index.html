@@ -4,515 +4,57 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-	<link rel="stylesheet" href="./style/style.css">
-	<script type="text/javascript" src="./asset/app.js"></script>
-	<title>Portfolio</title>
+	<link rel="stylesheet" href="style/style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<title>Document</title>
 </head>
 <body>
-	<!-- Navbar -->
-	<header class="header-scroll">
-		<div class="header-area">
-			<div class="main-menu">
-				<nav class="navbar navbar-expand-lg">
-					<a href="#top" class="navbar-brand">
-						<h3>
-							<i class="fas fa-home"></i>
-						</h3>
-					</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="dropdown">
-						<ul class="navbar-nav">
-							<li class="nav-item active">
-								<a href="#home" class="nav-links">Home</a>
-							</li>
-							<li class="nav-item active">
-								<a href="#about" class="nav-links">About</a>
-							</li>
-							<li class="nav-item active">
-								<a href="#projects" class="nav-links">Projects</a>
-							</li>
-							<li class="nav-item active">
-								<a href="#skills" class="nav-links">Skills</a>
-							</li>
-							<li class="nav-item active">
-								<a href="#tools" class="nav-links">Tools</a>
-							</li>
-							<li class="nav-item active">
-								<a href="#contact" class="nav-links">Contact</a>
-							</li>
-						</ul>
+	<!-- Navigation section -->
+	<header class="header">
+		<nav class="navbar">
+			<div class="max-width">
+				<div class="logo"><a href="#" id="media-small">Gaz<span id="business">Development<span id="dot">.</span></span></a></div>
+				<div class="margin-around">
+					<ul class="menu">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#tools">Tools</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				<span class="hamburger-btn">
+					<div class="hb-btn">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
 					</div>
-				</nav>
+				</span>
 			</div>
-		</div>
+		</nav>
 	</header>
-	
+
 	<!-- Home -->
-	<div id="home" class="slider-area hero cover background-image" data-overlay="5">
-		<div class="home-arrow">
-			<a href="#about" class="smoth-scroll">
-				<i class="#ICON"></i>
-			</a>
-		</div>
-	</div>
-	<div class="single-slider slider-height d-flex align-items-center">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-8">
-					<div class="slider-content slider-text">
-						<h1 class="white-color" data-animation="fadeInDown" data-delay=".3s">
-							Meran <br> Nzar Hussein
-						</h1>
-						<h4 class="white-color cd-headline clip is-full-width" data-animation="fadeInDown" data-delay=".6s">
-							<span class="cd-words-wrapper typing">
-								<b class="is-visible">Full-Stack Developer</b>
-								<b class="is-hidden">Mobile Development</b>
-								<b class="is-hidden">Coder</b>
-							</span>
-						</h4>
-						<a href="#CV>PDF" target="_blank" class="btn smoth-scroll">
-							Resume
-						</a>
-					</div>
+	<section class="home background-image">
+		<div class="max-width">
+			<div class="home-content">
+				<div class="content-name">
+					<h1 class="name-me">
+						Meran <br> Nezar Hussein
+					</h1>
+					<h4 class="develop-me">
+						<span class="animation-me">
+							<b class="is-visible">Full-Stack Developer</b>
+							<b class="is-hidden">Mobile Development</b>
+							<b class="is-hidden">Coder</b>
+						</span>
+					</h4>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- About -->
-	<div id="about">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-5 col-lg-5">
-					<div class="about-me">
-						<img src="" alt=""><button>#-FOTO-#</button>
-					</div>
-				</div>
-				<div class="col-xl-7 col-lg-7">
-					<div class="about-me-info">
-						<h2></h2>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, adipisci?</p>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, adipisci?</p>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, adipisci?</p>
-						<h6>Let's Code!!!</h6>
-						<div class="contact-info-me">
-							<h6>Mail</h6>
-							<h6>Tel</h6>
-							<h6>Linkedin</h6>
-							<h6>Github</h6>
-						</div>
-						<button>CV-PDF</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Projects -->
-	<div id="projects">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-6 col-lg-8 offset-lg-2 offset-xl-3">
-					<div class="area-title text-center">
-						<h2>Projects</h2>
-						<p>Here are some of my works i developed!</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xl-12">
-					<div class="portfolio-men text-center">
-						<button data-filter=".cat1">All</button>
-						<button data-filter=".cat1">Javascript</button>
-						<button data-filter=".cat1">React</button>
-						<button data-filter=".cat1">NodeJS</button>
-						<button data-filter=".cat1">Rest API</button>
-					</div>
-				</div>
-			</div>
-			<div class="row grid">
-				<div class="col-xl-4 col-lg-4 col-md-6 grid-item cat1 cat3">
-					<div class="portfolio-wrapper">
-						<div class="portfolio-thumb">
-							<img src="#" alt=""><button>>#-FOTO-#</button>
-						</div>
-						<div class="portfolio-content">
-							<h3>
-								<a href="#">
-									project-01
-								</a>
-							</h3>
-							<span>
-								info about my work content
-							</span>
-						</div>
-						<div class="modal" id="popup-modal">
-							<div class="modal-content">
-								<div class="vieuw-project">
-									<video src="" controls autoplay muted></video>
-								</div>
-								<div class="vieuw-project-content">
-									<div class="modal-title">
-										<h2>Title modal 1</h2>
-									</div>
-									<p>Content of mine project</p>
-									<ul class="project-info-list">
-										<li class="text-uppercase">Technologies</li>
-										<li class="text-uppercase">Industry</li>
-										<li class="text-uppercase">Collabrators</li>
-										<li class="text-uppercase">Live Website</li>
-										<li class="text-uppercase">Github</li>
-									</ul>	
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-4 col-lg-4 col-md-6 grid-item cat1 cat3">
-					<div class="portfolio-wrapper">
-						<div class="portfolio-thumb">
-							<img src="#" alt=""><button>>#-FOTO-#</button>
-						</div>
-						<div class="portfolio-content">
-							<h3>
-								<a href="#">
-									project-02
-								</a>
-							</h3>
-							<span>
-								info about my work content
-							</span>
-						</div>
-						<div class="modal fade show" id="popup-modal">
-							<div class="modal-content">
-								<div class="vieuw-project">
-									<video src="" controls autoplay muted></video>
-								</div>
-								<div class="vieuw-project-content">
-									<div class="modal-title">
-										<h2>Title modal 2</h2>
-									</div>
-									<p>Content of mine project</p>
-									<ul class="project-info-list">
-										<li class="text-uppercase">Technologies</li>
-										<li class="text-uppercase">Industry</li>
-										<li class="text-uppercase">Collabrators</li>
-										<li class="text-uppercase">Live Website</li>
-										<li class="text-uppercase">Github</li>
-									</ul>	
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-4 col-lg-4 col-md-6 grid-item cat2 cat3">
-					<div class="portfolio-wrapper">
-						<div class="portfolio-thumb">
-							<img src="#" alt=""><button>>#-FOTO-#</button>
-						</div>
-						<div class="portfolio-content">
-							<h3>
-								<a href="#">
-									project-03
-								</a>
-							</h3>
-							<span>
-								info about my work content
-							</span>
-						</div>
-						<div class="modal fade show" id="popup-modal">
-							<div class="modal-content">
-								<div class="vieuw-project">
-									<video src="" controls autoplay muted></video>
-								</div>
-								<div class="vieuw-project-content">
-									<div class="modal-title">
-										<h2>Title modal 3</h2>
-									</div>
-									<p>Content of mine project</p>
-									<ul class="project-info-list">
-										<li class="text-uppercase">Technologies</li>
-										<li class="text-uppercase">Industry</li>
-										<li class="text-uppercase">Collabrators</li>
-										<li class="text-uppercase">Live Website</li>
-										<li class="text-uppercase">Github</li>
-									</ul>	
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Skills -->
-	<div id="skills" class="basic-servervice-area">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-6 col-lg-8 offset-lg-2 offset-xl-3">
-					<div class="area-title text-center">
-						<h2>Skills</h2>
-						<p>Languages and Technologies that I have learned and applied to my projects</p>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-sm-6 col-md-3 my-3 skills-card">
-					<div class="skills-details">
-						<object data="#" type="#" class="devicon-sv">
-							#document
-							<h5>C</h5>
-						</object>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 my-3 skills-card">
-					<div class="skills-details">
-						<object data="#" type="#" class="devicon-sv">
-							#document
-							<h5>Python</h5>
-						</object>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 my-3 skills-card">
-					<div class="skills-details">
-						<object data="#" type="#" class="devicon-sv">
-							#document
-							<h5>HTML 5</h5>
-						</object>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 my-3 skills-card">
-					<div class="skills-details">
-						<object data="#" type="#" class="devicon-sv">
-							#document
-							<h5>CSS 3</h5>
-						</object>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 my-3 skills-card">
-					<div class="skills-details">
-						<object data="#" type="#" class="devicon-sv">
-							#document
-							<h5>Bootstrap 4</h5>
-						</object>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 my-3 skills-card">
-					<div class="skills-details">
-						<object data="#" type="#" class="devicon-sv">
-							#document
-							<h5>Javascript</h5>
-						</object>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 my-3 skills-card">
-					<div class="skills-details">
-						<object data="#" type="#" class="devicon-sv">
-							#document
-							<h5>jQuery</h5>
-						</object>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 my-3 skills-card">
-					<div class="skills-details">
-						<object data="#" type="#" class="devicon-sv">
-							#document
-							<h5>React.js</h5>
-						</object>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 my-3 skills-card">
-					<div class="skills-details">
-						<object data="#" type="#" class="devicon-sv">
-							#document
-							<h5>NodeJS</h5>
-						</object>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Tools -->
-	<div id="tools">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-6 col-lg-8 offset-lg-2 offset-xl-3">
-					<div class="area-title text-center">
-						<h2>Tools</h2>
-						<p>My weapons of choice to help tackle any projects</p>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-sm-6 col-md-3 my-3 skills-card">
-					<div class="skills-details">
-						<object data="#" type="#" class="devicon-sv">
-							#document
-							<h5>VS Code</h5>
-						</object>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 my-3 skills-card">
-					<div class="skills-details">
-						<object data="#" type="#" class="devicon-sv">
-							#document
-							<h5>Git</h5>
-						</object>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 my-3 skills-card">
-					<div class="skills-details">
-						<object data="#" type="#" class="devicon-sv">
-							#document
-							<h5>Github</h5>
-						</object>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 my-3 skills-card">
-					<div class="skills-details">
-						<object data="#" type="#" class="devicon-sv">
-							#document
-							<h5>NPM</h5>
-						</object>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 my-3 skills-card">
-					<div class="skills-details">
-						<object data="#" type="#" class="devicon-sv">
-							#document
-							<h5>YARN</h5>
-						</object>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 my-3 skills-card">
-					<div class="skills-details">
-						<object data="#" type="#" class="devicon-sv">
-							#document
-							<h5>Webpack</h5>
-						</object>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 my-3 skills-card">
-					<div class="skills-details">
-						<object data="#" type="#" class="devicon-sv">
-							#document
-							<h5>Babel</h5>
-						</object>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 my-3 skills-card">
-					<div class="skills-details">
-						<object data="#" type="#" class="devicon-sv">
-							#document
-							<h5>ESlint</h5>
-						</object>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Contact -->
-	<div id="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-7 col-lg-7">
-					<div class="area-title">
-						<h2>Leave a Message</h2>
-					</div>
-					<div class="contact-form">
-						<form action="#" id="contact-form">
-							<div class="row">
-								<div class="col-md-6">
-									<input type="text" name="name" id="contact-name" placeholder="Your Name :">
-								</div>
-								<div class="col-md-6">
-									<input type="text" name="email" id="contact-email" placeholder="Email :">
-								</div>
-								<div class="col-md-12">
-									<input type="subject" name="subject" id="contact-subject" placeholder="Subject :">
-								</div>
-								<div class="col-md-12">
-									<textarea name="message" id="message" cols="30" rows="10" placeholder="Your message :"></textarea>
-									<button class="btn" type="submit">Send Message!</button>
-								</div>
-							</div>
-						</form>
-					</div>
-					<div class="col-xl-5 col-lg-5">
-						<div class="area-title">
-							<h2>Contact Info</h2>
-							<p>Feel free to contact me for career prospects, business services, and other professional inquiries!</p>
-						</div>
-						<div class="contact-info">
-							<ul>
-								<li>
-									<div class="contact-icon">
-										<i class="#"></i>
-									</div>
-									<div class="contact-text">
-										<h5>Location</h5>
-										<span>Flevoland, Almere</span>
-									</div>
-								</li>
-								<li>
-									<div class="contact-icon">
-										<i class="#"></i>
-									</div>
-									<div class="contact-text">
-										<h5>Call Me At</h5>
-										<span>
-											<a href="tel:+31644612866">(+31) 0644612866</a>
-										</span>
-									</div>
-								</li>
-								<li>
-									<div class="contact-icon">
-										<i class="#"></i>
-									</div>
-									<div class="contact-text">
-										<h5>Email Me At</h5>
-										<span>
-											<a href="mailTo:meranzakelijk@gmail.com">meranzakelijk@gmail.com</a>
-										</span>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Footer -->
-	<footer>
-		<div class="footer-area black-bg">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-12">
-						<div class="footer-text text-center">
-							<div class="footer-icon">
-								<a href="#" target="_blank">
-									<i class="#">icon</i>
-								</a>
-								<a href="#" target="_blank">
-									<i class="#">icon</i>
-								</a>
-								<a href="#" target="_blank">
-									<i class="#">icon</i>
-								</a>
-								<p>Copyright - 2021 Gaz Development. All Right Reserved</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- BTN-up-Scroller -->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</section>
+
+	<script type="text/javascript" src="./asset/app.js"></script>
 </body>
 </html>

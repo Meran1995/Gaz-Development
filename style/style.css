@@ -1,54 +1,97 @@
-@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,400;0,500;0,600;1,500&display=swap');
 
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "Newspaper", sans-serif;
-	font-weight: 500;
-	font-style: normal;
-	font-size: 20px;
 	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Bitter", serif;
 }
-/* Navbar */
-.header-area {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	position: fixed;
-	background-color: rgba(0, 0, 0, 0.5);
-}
-.header-area .main-menu {
-	width: 80%;
-}
-.header-area .main-menu nav {
+header {
 	width: 100%;
 }
-.header-area .main-menu nav #dropdown {
-	justify-content: flex-end;
-}
-.fa-home,
-.nav-links {
-	color: #fff;
-	margin-left: 25px;
-}
-span {
-	background-color: #fff;
-}
-.fa-home {
-	font-size: 25px;
+.max-width {
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+	height: 12vh;
 }
 
-/* Home */
+/* navbar */
+.navbar {
+	position: fixed;
+	width: 100%;
+	padding: 10px 0;
+	transition: all 0.4s ease;
+}
+.navbar.sticky {
+	padding: 10px 0;
+	background: rgba(0, 0, 0);
+}
+.navbar.sticky .logo a #business {
+	color: #0000ff;
+	transition: all 0.3s ease;
+}
+.header .navbar .max-width {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	margin-bottom: 2vh;
+}
+#dot {
+	color: #fff;
+}
+.header .navbar .max-width .logo a {
+	color: #fff;
+	font-size: 60px;
+	font-weight: 600;
+}
+.header .navbar .max-width .logo #business {
+	font-size: 35px;
+	color: #0000ff;
+}
+.header .navbar .max-width .margin-around .menu li {
+	list-style: none;
+	display: inline-block;
+}
+.header .navbar .max-width .margin-around {
+	margin: 10px;
+}
+.header .navbar .max-width .margin-around .menu li a {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	margin-left: 25px;
+	transition: color 0.3s ease;
+}
+.header .navbar .max-width .margin-around .menu li a:hover {
+	color: #0000ff;
+}
+
+/* home */
 .background-image {
-	height: 100vh;
-	background: url(./images/Skyline_Almere.jpg);
+	display: flex;
+	background: url("/style/images/Skyline_Almere.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: 100vh;
+	color: #fff;
+	min-height: 500px;
 }
-/* About */
-/* Projects */
-/* Skills */
-/* Tools */
-/* Contact */
+.home .max-width {
+	margin: 200px 0 auto 100px;
+}
+.name-me {
+	font-size: 60px;
+	line-height: 1.2;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+b {
+	font-size: 30px;
+	font-weight: 200;
+	background-color: black;
+}
+
