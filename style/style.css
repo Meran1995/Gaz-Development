@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,400;0,500;0,600;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@200;300;400&family=Noto+Serif+KR:wght@200;400;500&display=swap");
 
 * {
 	margin: 0;
@@ -122,6 +122,65 @@ b {
 	background-color: #fff;
 	margin: 5px 0;
 	transition: 0.4s;
+}
+/* about */
+.about .max-width {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+.about .container {
+	display: flex;
+	font-family: "Noto Serif KR", serif;
+	box-sizing: border-box;
+	justify-content:space-around;
+	margin: 35px 0 0 0;
+}
+.about .max-width .img-sector img {
+	background-color: blue;
+	border-radius: 15%;
+	width: 350px;
+	height: 300px;
+}
+.about .max-width .about-content {
+	flex-direction: column;
+	padding: 5px 15px 15px 15px;
+	border-radius: 2.2%;
+	width: 50%;
+	background-color: rgba(0, 0, 0, 0.1);
+	justify-content: flex-end;
+}
+.about .max-width .about-content .about-me h2 {
+	font-weight: 600;
+	font-size: 20px;
+	margin: 0 0 0 5px;
+}
+.about .max-width .about-content .about-me .paragraaf p {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1.4;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 3px 5px 3px 5px;
+}
+h2, p, h6{
+	width: 100%;
+}
+.hr-center {
+	display: flex;
+	height: 3px;
+	margin: 5px 15pc 5px 0;
+	background: black;
+	border: 1px solid black;
+	width: 100%;
+}
+.about .max-width .about-content .about-me h6 {
+	font-weight: 500;
+	font-size: 15px;
+	padding: 3px 5px 3px 5px;
+	background: rgba(0, 0, 0, 0.1);
+}
+.about .max-width .about-content .about-me .cv-button a {
+	font-size: 20px;
 }
 /* media query */
 @media (max-width: 1235px) {
