@@ -149,7 +149,7 @@ b {
 /* about */
 .container {
 	height: 100vh;
-	padding: 110px 0 90px 0;
+	padding: 100px 0
 }
 .vis-content {
 	display: flex;
