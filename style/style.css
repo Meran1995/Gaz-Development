@@ -12,11 +12,10 @@ header {
 }
 .max-width {
 	max-width: 1300px;
-	padding: 0 75px;
+	padding: 0 60px;
 	margin: auto;
 	height: 12vh;
 }
-
 /* navbar */
 .navbar {
 	position: fixed;
@@ -86,12 +85,11 @@ header {
 	position: relative;
 	z-index: 1;
 }
-.background-image:nth-of-type(1){
+.background-image:nth-of-type(1) {
 	background-image: url("/style/images/Skyline_Almere.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	
 }
 .background-image::after {
 	content: "";
@@ -100,7 +98,7 @@ header {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, .4);
+	background: rgba(0, 0, 0, 0.4);
 }
 .home .max-width {
 	margin-left: 100px;
@@ -147,18 +145,18 @@ b {
 	transition: 0.4s;
 }
 /* about */
-.container {
-	height: 100vh;
-	padding: 100px 0
+section {
+	padding: 100px 0;
 }
 .vis-content {
 	display: flex;
 	flex-wrap: wrap;
-	align-items:flex-start;
-	justify-content:space-evenly;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	box-sizing: border-box;
 	padding: 0 75px;
 }
-.vis-content .img-sector .img{
+.vis-content .img-sector .img {
 	margin: 5px;
 }
 .vis-content .img-sector .img img {
@@ -170,11 +168,11 @@ b {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.vis-content .about-content{
+.vis-content .about-content {
 	padding: 10px;
 	width: 40%;
 }
-.vis-content .about-content .about-me{
+.vis-content .about-content .about-me {
 	padding: 5px;
 	font-family: "Noto Serif KR", serif;
 }
@@ -193,24 +191,27 @@ b {
 .about .container .vis-content .about-content .about-me .contact-me {
 	margin: 15px 0;
 }
-.about .container .vis-content .about-content .about-me .contact-me #title-contact-me {
+.about
+	.container
+	.vis-content
+	.about-content
+	.about-me
+	.contact-me
+	#title-contact-me {
 	font-size: 16px;
 	font-weight: bold;
 	padding: 0 0 15px 0;
-
 }
 .about .container .vis-content .about-content .about-me .contact-me h6 {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 27px;
 }
-.about .container .vis-content .about-content .about-me .contact-me .blue{
+.about .container .vis-content .about-content .about-me .contact-me .blue {
 	color: #0000ff;
-	
 }
-.about .container .vis-content .about-content .about-me .contact-me h6 a{
+.about .container .vis-content .about-content .about-me .contact-me h6 a {
 	color: #000;
-	
 }
 .about .container .vis-content .about-content .about-me .cv-button a {
 	font-size: 20px;
@@ -220,10 +221,12 @@ b {
 	.home .max-width {
 		margin-left: 0;
 	}
+}
 @media (max-width: 1235px) {
 	.home .max-width {
 		margin-left: 60px;
 	}
+}
 @media (max-width: 1188px) {
 	.home .max-width {
 		margin-left: 40px;
@@ -287,7 +290,7 @@ b {
 		width: 450px;
 		height: 350px;
 	}
-	.about .container .vis-content .about-content{
+	.about .container .vis-content .about-content {
 		flex: 100%;
 	}
 }
@@ -370,7 +373,13 @@ b {
 	.about .container .vis-content .about-content .about-me .paragraaf p {
 		font-size: 12px;
 	}
-	.about .container .vis-content .about-content .about-me .contact-me #title-contact-me {
+	.about
+		.container
+		.vis-content
+		.about-content
+		.about-me
+		.contact-me
+		#title-contact-me {
 		font-size: 14px;
 	}
 	.about .container .vis-content .about-content .about-me .contact-me h6 {
@@ -385,7 +394,7 @@ b {
 		width: 300px;
 		height: 200px;
 	}
-	.vis-content{
+	.vis-content {
 		padding: 0 65px;
 	}
 	.about .container .vis-content .about-content .about-me h2 {
@@ -416,7 +425,7 @@ b {
 		width: 280px;
 		height: 180px;
 	}
-	.vis-content{
+	.vis-content {
 		padding: 0 25px;
 	}
 	.about .container .vis-content .about-content .about-me h2 {
