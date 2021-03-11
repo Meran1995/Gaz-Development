@@ -86,7 +86,7 @@ header {
 	z-index: 1;
 }
 .background-image:nth-of-type(1) {
-	background-image: url("/style/images/Skyline_Almere.jpg");
+	background-image: url("/style/images/Pictures/Skyline_Almere.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -264,28 +264,62 @@ section {
 	color: #0000ff;
 }
 .projects .container .project-view .project-content .project-img-sector {
-	margin: 10px;
+	margin: 15px;
 }
 .projects .container .project-view .project-content .project-img-sector img {
 	width: 350px;
 	height: 350px;
 }
 /* Skills */
-.skills .container .skills-view {
+.skills .container .skills-view .skills-title {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	padding: 0 75px;
 }
-.skills .container .skills-view h1 {
+.skills .container .skills-view .skills-title .title-content h1 {
 	text-align: center;
 	padding: 5px;
 	font-size: 50px;
+}
+.skills .container .skills-view .skills-title .title-content p {
+	font-size: 18px;
+	font-weight: 400;
+	padding: 15px 5px;
+}
+.skills .container .skills-view .skills-content {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 0 75px;
+	text-align: center;
+}
+.skills .container .skills-view .skills-content .img-content {
+	width: 22%;
+	padding: 0 20px;
+	margin: 20px 0;
+}
+.skills .container .skills-view .skills-content .img-content img {
+	width: 80px;
+	height: 80px;
+}
+.skills .container .skills-view .skills-content .img-content h5 {
+	padding-top: 15px;
+	font-size: 20px;
 }
 /* media query */
 @media (max-width: 1300px) {
 	.home .max-width {
 		margin-left: 0;
+	}
+	.projects .container .project-view .project-content {
+		padding: 0 10px;
+	}
+	.projects .container .project-view .project-content .project-img-sector img {
+		width: 350px;
+		height: 350px;
 	}
 }
 @media (max-width: 1235px) {
@@ -359,6 +393,11 @@ section {
 	.about .container .vis-content .about-content {
 		flex: 100%;
 	}
+	.projects .container .project-view .project-title .title-content p {
+		font-size: 16px;
+		flex: 100%;
+		text-align: center;
+	}
 }
 @media (max-width: 888px) {
 	.home .max-width {
@@ -371,6 +410,16 @@ section {
 	b {
 		font-size: 20px;
 		font-weight: 200;
+	}
+	.projects .container .project-view .project-content .project-img-sector img {
+		width: 550px;
+		height: 550px;
+	}
+	.projects .container .project-view .project-title .title-content h1 {
+		font-size: 45px;
+	}
+	.projects .container .project-view .project-types {
+		padding: 0 60px;
 	}
 }
 @media (max-width: 768px) {
@@ -403,6 +452,18 @@ section {
 	.vis-content .img-sector .img img {
 		width: 400px;
 		height: 300px;
+	}
+	.projects .container .project-view .project-title .title-content p {
+		width: 100%;
+	}
+	.projects .container .project-view .project-content .project-img-sector img {
+		padding: 0 5px;
+	}
+	.projects .container .project-view .project-types .portfolio-subtitles a {
+		flex: 100%;
+	}
+	.projects .container .project-view .project-types {
+		padding: 0 30px;
 	}
 }
 @media (max-width: 545px) {
@@ -454,6 +515,24 @@ section {
 	.about .container .vis-content .about-content .about-me .cv-button a {
 		font-size: 18px;
 	}
+	.projects .container .project-view .project-content {
+		padding: 0;
+	}
+	.projects .container .project-view .project-content .project-img-sector img {
+		width: 450px;
+		height: 450px;
+	}
+	.projects .container .project-view .project-types {
+		padding: 0 10px;
+	}
+	.projects
+		.container
+		.project-view
+		.project-types
+		.portfolio-subtitles
+		button {
+		font-size: 14px;
+	}
 }
 @media (max-width: 460px) {
 	.vis-content .img-sector .img img {
@@ -465,6 +544,18 @@ section {
 	}
 	.about .container .vis-content .about-content .about-me h2 {
 		font-size: 16px;
+	}
+	.projects .container .project-view .project-content .project-img-sector img {
+		width: 400px;
+		height: 400px;
+	}
+	.projects
+		.container
+		.project-view
+		.project-types
+		.portfolio-subtitles
+		button {
+		font-size: 12px;
 	}
 }
 @media (max-width: 390px) {
@@ -496,5 +587,9 @@ section {
 	}
 	.about .container .vis-content .about-content .about-me h2 {
 		font-size: 16px;
+	}
+	.projects .container .project-view .project-content .project-img-sector img {
+		width: 350px;
+		height: 350px;
 	}
 }
