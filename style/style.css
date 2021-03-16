@@ -437,9 +437,6 @@ section {
 	}
 }
 @media (max-width: 888px) {
-	.home .container {
-		margin-left: 15px;
-	}
 	.name-me {
 		font-size: 45px;
 		line-height: 1;
@@ -447,6 +444,9 @@ section {
 	b {
 		font-size: 20px;
 		font-weight: 200;
+	}
+	.header .container .navbar .margin-around .menu li a {
+		font-size: 30px;
 	}
 	.projects .container .project-view .project-content .project-img-sector img {
 		width: 550px;
@@ -532,6 +532,9 @@ section {
 @media (max-width: 545px) {
 	.home .container .home-content .content-name {
 		padding: 0 0 30px 30px;
+	}
+	.header .container .navbar .margin-around .menu li a {
+		font-size: 25px;
 	}
 	.header .container .navbar {
 		padding: 0 50px;
@@ -674,8 +677,11 @@ section {
 	}
 }
 @media (max-width: 390px) {
-	.home .container {
-		margin-left: 0;
+	.header .container .navbar .margin-around .menu li {
+		margin-top: 40px;
+	}
+	.header .container .navbar .margin-around .menu li a {
+		font-size: 25px;
 	}
 	.header .container .navbar {
 		padding: 0 25px;
