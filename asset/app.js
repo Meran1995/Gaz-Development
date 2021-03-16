@@ -82,5 +82,28 @@ const stickyNavbar = () => {
 	});
 };
 
+const hamburgerToggle = () => {
+	const burger = document.querySelector(".hamburger-btn");
+	const menu = document.querySelector(".menu");
+	const navLinks = document.querySelectorAll(".menu li");
+
+	burger.addEventListener("click", () => {
+		menu.classList.toggle("active");
+
+		navLinks.forEach((link, index) => {
+			if (link.style.animation) {
+				link.style.animation = "";
+			} else {
+				link.style.animation = `navLinkFade 0.5s ease forwards ${
+					index / 7 + 0.6
+				}s`;
+			}
+		});
+
+		burger.classList.toggle('rotate');
+	});
+};
+
 aWork();
 stickyNavbar();
+hamburgerToggle();
