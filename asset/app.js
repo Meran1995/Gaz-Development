@@ -63,5 +63,24 @@ const aWork = () => {
 	}
 };
 
+const stickyNavbar = () => {
+	const sticky = document.querySelector(".navbar");
+
+	addClassHeader = () => {
+		sticky.classList.add("sticky");
+	};
+	removeClassHeader = () => {
+		sticky.classList.remove("sticky");
+	};
+	window.addEventListener("scroll", function () {
+		let scrollDown = window.scrollY;
+		if (scrollDown > 0) {
+			addClassHeader();
+		} else {
+			removeClassHeader();
+		}
+	});
+};
 
 aWork();
+stickyNavbar();
