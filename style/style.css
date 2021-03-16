@@ -64,10 +64,14 @@ html {
 .header .container .navbar .margin-around {
 	margin: 20px;
 }
+.header .container .navbar .margin-around .menu li {
+	text-align: center;
+	padding: 0 5px;
+}
 .header .container .navbar .margin-around .menu li a {
 	color: #fff;
 	font-size: 20px;
-	font-weight: 400;
+	font-weight: 500;
 	transition: color 0.3s ease;
 }
 .header .container .navbar .margin-around .menu li a:hover {
@@ -364,9 +368,6 @@ section {
 	.container {
 		padding: 0 50px;
 	}
-	.header .container .navbar .margin-around {
-		z-index: 9999;
-	}
 	.header .container .navbar .margin-around .menu {
 		position: absolute;
 		right: 0;
@@ -376,7 +377,7 @@ section {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-color: #000;
+		background: rgba(0, 0, 0, 0);
 		transform: translateY(-100%);
 		transition: transform 0.6s ease-in;
 	}
@@ -389,6 +390,7 @@ section {
 	}
 	.header .container .navbar .margin-around .menu.active {
 		transform: translateY(0%);
+		background: rgb(0, 0, 0);
 	}
 	.header .container .navbar .margin-around .hamburger-btn {
 		display: block;
@@ -495,13 +497,17 @@ section {
 		width: 100%;
 	}
 	.projects .container .project-view .project-content .project-img-sector img {
-		padding: 0 5px;
-	}
-	.projects .container .project-view .project-types .portfolio-subtitles a {
-		flex: 100%;
+		padding: 0;
 	}
 	.projects .container .project-view .project-types {
-		padding: 0 30px;
+		padding: 0;
+	}
+	.projects .container .project-view .project-types .portfolio-subtitles {
+		text-align: center;
+	}
+	.projects .container .project-view .project-types .portfolio-subtitles a {
+		font-size: 18px;
+		flex: 100%;
 	}
 	.skills-tools .container .skills-tools-view .skills-tools-content {
 		padding: 0 10px;
@@ -524,9 +530,6 @@ section {
 	}
 }
 @media (max-width: 545px) {
-	.home .container {
-		margin-left: 0;
-	}
 	.home .container .home-content .content-name {
 		padding: 0 0 30px 30px;
 	}
@@ -559,9 +562,11 @@ section {
 	}
 	.about .container .vis-content .about-content .about-me h2 {
 		font-size: 18px;
+		text-align: center;
 	}
 	.about .container .vis-content .about-content .about-me .paragraaf p {
 		font-size: 12px;
+		text-align: center;
 	}
 	.about
 		.container
@@ -584,17 +589,6 @@ section {
 	.projects .container .project-view .project-content .project-img-sector img {
 		width: 420px;
 		height: 420px;
-	}
-	.projects .container .project-view .project-types {
-		padding: 0 10px;
-	}
-	.projects
-		.container
-		.project-view
-		.project-types
-		.portfolio-subtitles
-		button {
-		font-size: 14px;
 	}
 	.skills-tools .container .skills-tools-view .skills-tools-content {
 		padding: 0 5px;
@@ -642,7 +636,10 @@ section {
 		height: 200px;
 	}
 	.vis-content {
-		padding: 0 65px;
+		padding: 0;
+	}
+	.about .container .vis-content .about-content {
+		padding: 0;
 	}
 	.about .container .vis-content .about-content .about-me h2 {
 		font-size: 16px;
@@ -664,7 +661,7 @@ section {
 		.skills-tools-view
 		.skills-tools-content
 		.img-content {
-		width: 40%;
+		width: 50%;
 	}
 	.skills-tools
 		.container
@@ -703,9 +700,6 @@ section {
 		width: 280px;
 		height: 180px;
 	}
-	.vis-content {
-		padding: 0 25px;
-	}
 	.about .container .vis-content .about-content .about-me h2 {
 		font-size: 16px;
 	}
@@ -722,7 +716,6 @@ section {
 		.skills-tools-view
 		.skills-tools-content
 		.img-content {
-		width: 40%;
 		padding: 0;
 	}
 	.skills-tools
@@ -760,12 +753,19 @@ section {
 		padding: 0;
 	}
 	.skills-tools
+	.container
+	.skills-tools-view
+	.skills-tools-content
+	.img-content {
+		width: 50%;
+	}
+	.skills-tools
 		.container
 		.skills-tools-view
 		.skills-tools-content
 		.img-content
 		img {
-		width: 70px;
-		height: 70px;
+		width: 50px;
+		height: 50px;
 	}
 }
