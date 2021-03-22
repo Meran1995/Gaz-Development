@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@200;300;400&family=Noto+Serif+KR:wght@200;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200;300;400&family=Noto+Serif+KR:wght@200;400;500&display=swap');
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	text-decoration: none;
-	font-family: "Bitter", serif;
+	font-family: 'Bitter', serif;
 }
 html {
 	padding: 0;
@@ -112,13 +112,13 @@ html {
 	z-index: 9;
 }
 .background-image:nth-of-type(1) {
-	background-image: url("/style/images/Pictures/Skyline_Almere.jpg");
+	background-image: url('/style/images/Pictures/Skyline_Almere.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .background-image::after {
-	content: "";
+	content: '';
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -189,7 +189,7 @@ section {
 }
 .vis-content .about-content .about-me {
 	padding: 5px;
-	font-family: "Noto Serif KR", serif;
+	font-family: 'Noto Serif KR', serif;
 }
 .about .container .vis-content .about-content .about-me h2 {
 	font-weight: 600;
@@ -202,7 +202,14 @@ section {
 	line-height: 27px;
 	margin-bottom: 5px;
 }
-
+#upper {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#italic {
+	font-style: italic;
+	padding-right: 5px;
+}
 .about .container .vis-content .about-content .about-me .contact-me {
 	margin: 15px 0;
 }
@@ -223,10 +230,10 @@ section {
 	line-height: 27px;
 }
 .about .container .vis-content .about-content .about-me .contact-me .blue {
-	color: #0000ff;
+	color: #000;
 }
 .about .container .vis-content .about-content .about-me .contact-me h6 a {
-	color: #000;
+	color: #0000ff;
 }
 .about .container .vis-content .about-content .about-me .cv-button a {
 	font-size: 20px;
@@ -255,6 +262,7 @@ section {
 .projects .container .project-view .project-types .portfolio-subtitles button {
 	font-size: 18px;
 	font-weight: 600;
+	text-transform: uppercase;
 	margin: 0 15px;
 	border: none;
 	background-color: #fff;
@@ -395,7 +403,7 @@ section {
 		display: block;
 		position: relative;
 	}
-	.about .container .vis-content .about-content .about-me h2 {
+	.about .container .vis-content .about-content .about-me {
 		text-align: center;
 	}
 	@keyframes navLinkFade {
@@ -532,6 +540,9 @@ section {
 	}
 }
 @media (max-width: 545px) {
+	section{
+		padding: 80px 0 0 0;
+	}
 	.home .container .home-content .content-name {
 		padding: 0 0 30px 30px;
 	}
@@ -766,10 +777,10 @@ section {
 		padding: 0;
 	}
 	.skills-tools
-	.container
-	.skills-tools-view
-	.skills-tools-content
-	.img-content {
+		.container
+		.skills-tools-view
+		.skills-tools-content
+		.img-content {
 		width: 50%;
 	}
 	.skills-tools
