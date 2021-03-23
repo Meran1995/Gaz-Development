@@ -149,7 +149,9 @@ html {
 	margin-top: 35px;
 	padding: 6px 10px 6px 10px;
 	background: #000;
+	border: 1px solid #0000ff;
 	border-radius: 8px;
+	cursor: pointer;
 }
 .cv-button:hover {
 	background: #0000ff;
@@ -359,6 +361,9 @@ section {
 .contact .container .vis-contact .contact-title .title-contact {
 	width: calc(40% - 30px);
 }
+.contact .container .vis-contact .contact-title form {
+	width: calc(60% - 30px);
+}
 .contact
 	.container
 	.vis-contact
@@ -386,11 +391,24 @@ section {
 	padding: 30px 0;
 	flex: 100%;
 }
-.contact .container .vis-contact .contact-title .title-contact .form-contact {
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.title-contact
+	.field-contact
+	.form-contact {
 	display: flex;
 	padding: 5px 0;
 }
-.contact .container .vis-contact .contact-title .title-contact .form-contact a {
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.title-contact
+	.field-contact
+	.form-contact
+	a {
 	border: 1px solid #0000ff;
 	border-radius: 50%;
 	color: #000;
@@ -407,6 +425,7 @@ section {
 	.vis-contact
 	.contact-title
 	.title-contact
+	.field-contact
 	.form-contact
 	a:hover {
 	border: 2px solid #000;
@@ -418,6 +437,7 @@ section {
 	.vis-contact
 	.contact-title
 	.title-contact
+	.field-contact
 	.form-contact
 	.contact-info {
 	margin-left: 20px;
@@ -427,6 +447,7 @@ section {
 	.vis-contact
 	.contact-title
 	.title-contact
+	.field-contact
 	.form-contact
 	.contact-info
 	h3 {
@@ -437,14 +458,12 @@ section {
 	.vis-contact
 	.contact-title
 	.title-contact
+	.field-contact
 	.form-contact
 	.contact-info
 	p {
 	padding-top: 6px;
 	font-size: 15px;
-}
-.contact .container .vis-contact .contact-title .form-content {
-	width: calc(60% - 30px);
 }
 .contact .container .vis-contact .contact-title .form-content .field-area {
 	margin-top: 20px;
@@ -519,6 +538,7 @@ textarea,
 	outline: none;
 	padding: 0 15px;
 	font-size: 18px;
+	font-weight: bold;
 }
 .contact
 	.container
@@ -566,6 +586,7 @@ textarea,
 	color: #000;
 	border: 3px solid #0000ff;
 	background-color: #ffffff;
+	cursor: pointer;
 }
 .contact
 	.container
@@ -677,6 +698,31 @@ textarea,
 	.skills-tools .container .skills-tools-view .skills-tools-content {
 		padding: 0 50px;
 	}
+	.contact .container .vis-contact .contact-title .title-contact {
+		display: flex;
+		width: calc(100% - 30px);
+	}
+	.contact .container .vis-contact .contact-title .form-content {
+		width: calc(100% - 30px);
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.title-contact
+		.form-contact-info
+		p {
+		font-size: 20px;
+		padding: 30px 10px 30px 0;
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.title-contact
+		.field-contact {
+		padding: 15px;
+	}
 }
 @media (max-width: 888px) {
 	.name-me {
@@ -699,6 +745,15 @@ textarea,
 	}
 	.projects .container .project-view .project-types {
 		padding: 0 60px;
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.title-contact
+		.form-contact-info
+		p {
+		font-size: 18px;
 	}
 }
 @media (max-width: 768px) {
@@ -770,11 +825,11 @@ textarea,
 		width: 100px;
 		height: 100px;
 	}
-}
-@media (max-width: 545px) {
 	section {
 		padding: 80px 0 0 0;
 	}
+}
+@media (max-width: 545px) {
 	.home .container .home-content .content-name {
 		padding: 0 0 30px 30px;
 	}
