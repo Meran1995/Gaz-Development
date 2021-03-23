@@ -12,7 +12,6 @@ html {
 	margin: 0;
 }
 .container {
-	max-width: 1500px;
 	padding: 0 75px;
 }
 /* navbar */
@@ -347,6 +346,239 @@ section {
 	span {
 	font-size: 16px;
 }
+/* Contact */
+#contact {
+	height: 95vh;
+}
+.contact .container .vis-contact .contact-title {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.contact .container .vis-contact .contact-title .title-contact {
+	width: calc(40% - 30px);
+}
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.title-contact
+	.form-contact-info
+	h1,
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.form-content
+	.form-contact-info
+	h1 {
+	font-size: 60px;
+}
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.title-contact
+	.form-contact-info
+	p {
+	font-size: 20px;
+	padding: 30px 0;
+	flex: 100%;
+}
+.contact .container .vis-contact .contact-title .title-contact .form-contact {
+	display: flex;
+	padding: 5px 0;
+}
+.contact .container .vis-contact .contact-title .title-contact .form-contact a {
+	border: 1px solid #0000ff;
+	border-radius: 50%;
+	color: #000;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+}
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.title-contact
+	.form-contact
+	a:hover {
+	border: 2px solid #000;
+	color: #0000ff;
+}
+
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.title-contact
+	.form-contact
+	.contact-info {
+	margin-left: 20px;
+}
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.title-contact
+	.form-contact
+	.contact-info
+	h3 {
+	font-size: 22px;
+}
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.title-contact
+	.form-contact
+	.contact-info
+	p {
+	padding-top: 6px;
+	font-size: 15px;
+}
+.contact .container .vis-contact .contact-title .form-content {
+	width: calc(60% - 30px);
+}
+.contact .container .vis-contact .contact-title .form-content .field-area {
+	margin-top: 20px;
+}
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.form-content
+	.field-area
+	.fields {
+	display: flex;
+}
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.form-content
+	.field-area
+	.fields,
+.field {
+	height: 60px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.form-content
+	.field-area
+	.field
+	textarea {
+	height: 100px;
+	width: 100%;
+}
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.form-content
+	.field-area
+	.fields
+	.name {
+	margin-right: 10px;
+}
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.form-content
+	.field-area
+	.fields
+	.email {
+	margin-left: 10px;
+}
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.form-content
+	.field-area
+	.fields
+	.field
+	input,
+textarea,
+.field input {
+	height: 100%;
+	width: 100%;
+	border-radius: 1px solid lightgrey;
+	border-radius: 10px;
+	outline: none;
+	padding: 0 15px;
+	font-size: 18px;
+}
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.form-content
+	.field-area
+	.textarea
+	textarea {
+	resize: none;
+}
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.form-content
+	.field-area
+	.btn-area {
+	margin-top: 70px;
+}
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.form-content
+	.field-area
+	.btn-area
+	.button {
+	height: 50px;
+	width: 150px;
+}
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.form-content
+	.field-area
+	.btn-area
+	.button
+	button {
+	height: 100%;
+	width: 100%;
+	font-size: 20px;
+	font-weight: 500;
+	color: #000;
+	border: 3px solid #0000ff;
+	background-color: #ffffff;
+}
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.form-content
+	.field-area
+	.btn-area
+	.button
+	button:hover {
+	border: 3px solid #000000;
+	color: #0000ff;
+}
 /* media query */
 @media (max-width: 1300px) {
 	.home .container {
@@ -540,7 +772,7 @@ section {
 	}
 }
 @media (max-width: 545px) {
-	section{
+	section {
 		padding: 80px 0 0 0;
 	}
 	.home .container .home-content .content-name {
