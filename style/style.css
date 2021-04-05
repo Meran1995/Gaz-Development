@@ -30,30 +30,11 @@ html {
 .navbar.sticky {
 	height: 75px;
 }
-.navbar.sticky .logo a #business {
-	color: #0000ff;
-	transition: all 0.4s ease;
-}
 .header .container .navbar {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 10px 75px;
-}
-.logo {
-	margin-bottom: 2vh;
-}
-#dot {
-	color: #fff;
-}
-.header .container .navbar .logo a {
-	color: #fff;
-	font-size: 55px;
-	font-weight: 600;
-}
-.header .container .navbar .logo #business {
-	font-size: 35px;
-	color: #0000ff;
 }
 .header .container .navbar .margin-around .menu li {
 	list-style: none;
@@ -66,7 +47,16 @@ html {
 	text-align: center;
 	padding: 0 10px;
 }
-.header .container .navbar .margin-around .menu li a {
+.header .container .navbar .logo a {
+	color: #fff;
+	transition: color 0.3s ease;
+}
+.header .container .navbar .logo a i {
+	font-size: 25px;
+	padding-left: 50px;
+}
+.header .container .navbar .logo a,
+.margin-around .menu li a {
 	color: #fff;
 	font-size: 20px;
 	font-weight: 500;
@@ -144,7 +134,8 @@ html {
 	font-weight: 200;
 	text-shadow: 3px 3px 10px #000;
 }
-.cv-button {
+#cv {
+	border: none;
 	display: inline-block;
 	margin-top: 35px;
 	padding: 6px 10px 6px 10px;
@@ -153,7 +144,7 @@ html {
 	border-radius: 8px;
 	cursor: pointer;
 }
-.cv-button:hover {
+#cv:hover {
 	background: #0000ff;
 }
 .cv-button a {
@@ -232,12 +223,6 @@ section {
 }
 .about .container .vis-content .about-content .about-me .contact-me .blue {
 	color: #000;
-}
-.about .container .vis-content .about-content .about-me .contact-me h6 a {
-	color: #0000ff;
-}
-.about .container .vis-content .about-content .about-me .cv-button a {
-	font-size: 20px;
 }
 /* Project */
 .projects .container .project-view .project-title,
@@ -356,7 +341,7 @@ section {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 }
 .contact .container .vis-contact .contact-title .title-contact {
 	width: calc(40% - 30px);
@@ -415,7 +400,6 @@ section {
 	height: 50px;
 	width: 50px;
 	display: inline-block;
-	border-radius: 50%;
 	text-align: center;
 	line-height: 50px;
 	font-size: 20px;
@@ -763,15 +747,6 @@ textarea,
 	.header .container .navbar {
 		padding: 0 55px;
 	}
-	.header .container .navbar .logo #media-small {
-		font-size: 55px;
-	}
-	.header .container .navbar .logo #business {
-		font-size: 30px;
-	}
-	.header .container .navbar .logo #dot {
-		font-size: 25px;
-	}
 	.name-me {
 		font-size: 40px;
 		line-height: 1;
@@ -828,6 +803,114 @@ textarea,
 	section {
 		padding: 80px 0 0 0;
 	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.title-contact
+		.form-contact-info
+		h1 {
+		font-size: 55px;
+		padding: 5px 0;
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.title-contact
+		.form-contact-info
+		p {
+		font-size: 22px;
+		padding: 10px 0;
+	}
+	.contact .container .vis-contact .contact-title .title-contact {
+		display: block;
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.title-contact
+		.form-contact-info {
+		text-align: center;
+		width: 100%;
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.title-contact
+		.field-contact {
+		display: flex;
+		justify-content: center;
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.title-contact
+		.field-contact
+		.form-contact
+		.contact-info {
+		display: none;
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.title-contact
+		.field-contact
+		.form-contact
+		a {
+		height: 70px;
+		width: 70px;
+		margin: 20px;
+		line-height: 70px;
+		font-size: 35px;
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.title-contact
+		.field-contact {
+		padding: 5px;
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.form-content
+		.form-contact-info
+		h1 {
+		font-size: 55px;
+		text-align: center;
+	}
+	.contact .container .vis-contact .contact-title .form-content .field-area {
+		display: block;
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.form-content
+		.field-area
+		.field {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.form-content
+		.field-area
+		.fields
+		.field
+		input {
+		width: 100%;
+	}
 }
 @media (max-width: 545px) {
 	.home .container .home-content .content-name {
@@ -838,15 +921,6 @@ textarea,
 	}
 	.header .container .navbar {
 		padding: 0 50px;
-	}
-	.header .container .navbar .logo #media-small {
-		font-size: 45px;
-	}
-	.header .container .navbar .logo #business {
-		font-size: 25px;
-	}
-	.header .container .navbar .logo #dot {
-		font-size: 20px;
 	}
 	.name-me {
 		font-size: 30px;
@@ -925,6 +999,44 @@ textarea,
 	.skills-tools .container .skills-tools-view .skills-tools-title {
 		padding: 0 1px;
 	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.title-contact
+		.form-contact-info
+		h1,
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.form-content
+		.form-contact-info
+		h1 {
+		font-size: 40px;
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.title-contact
+		.form-contact-info
+		p {
+		font-size: 18px;
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.title-contact
+		.field-contact
+		.form-contact
+		a {
+		height: 60px;
+		width: 60px;
+		line-height: 60px;
+		font-size: 30px;
+	}
 }
 @media (max-width: 460px) {
 	.header .container .navbar {
@@ -974,6 +1086,55 @@ textarea,
 		width: 100px;
 		height: 100px;
 	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.title-contact
+		.form-contact-info
+		h1,
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.form-content
+		.form-contact-info
+		h1 {
+		font-size: 35px;
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.title-contact
+		.form-contact-info
+		p {
+		font-size: 18px;
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.form-content
+		.field-area
+		.fields
+		.field
+		input,
+	textarea,
+	.field input {
+		font-size: 14px;
+	}
+	.contact
+	.container
+	.vis-contact
+	.contact-title
+	.form-content
+	.field-area
+	.btn-area
+	.button {
+	height: 40px;
+	width: 100px;
+}
 }
 @media (max-width: 390px) {
 	.header .container .navbar.sticky {
@@ -987,15 +1148,6 @@ textarea,
 	}
 	.header .container .navbar {
 		padding: 0 25px;
-	}
-	.header .container .navbar .logo #media-small {
-		font-size: 35px;
-	}
-	.header .container .navbar .logo #business {
-		font-size: 20px;
-	}
-	.header .container .navbar .logo #dot {
-		font-size: 20px;
 	}
 	.cv-button {
 		padding: 3px 6px 3px 6px;
@@ -1053,6 +1205,29 @@ textarea,
 		span {
 		font-size: 12px;
 	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.title-contact
+		.field-contact
+		.form-contact
+		a {
+		margin: 10px;
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.title-contact
+		.field-contact
+		.form-contact
+		a {
+		height: 50px;
+		width: 50px;
+		line-height: 50px;
+		font-size: 25px;
+	}
 }
 @media (max-width: 320px) {
 	.header .container .navbar.sticky {
@@ -1078,5 +1253,50 @@ textarea,
 		img {
 		width: 50px;
 		height: 50px;
+	}
+
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.title-contact
+		.form-contact-info
+		h1,
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.form-content
+		.form-contact-info
+		h1 {
+		font-size: 30px;
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.form-content
+		.form-contact-info
+		h1 {
+		width: 100%;
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.title-contact
+		.form-contact-info
+		p {
+		font-size: 14px;
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.title-contact
+		.field-contact
+		.form-contact
+		a {
+		margin: 8px;
 	}
 }

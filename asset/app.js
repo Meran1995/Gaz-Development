@@ -2,7 +2,7 @@ const aWork = () => {
 	const TypeWriter = function (textElement, words, wait = 1000) {
 		this.textElement = textElement;
 		this.words = words;
-		this.txt = "";
+		this.txt = '';
 		this.wordIndex = 0;
 		this.wait = parseInt(wait, 10);
 		this.type();
@@ -40,7 +40,7 @@ const aWork = () => {
 			typeSpeed = this.wait;
 			//set to true
 			this.isDeleting = true;
-		} else if (this.isDeleting && this.txt === "") {
+		} else if (this.isDeleting && this.txt === '') {
 			this.isDeleting = false;
 			// next word
 			this.wordIndex++;
@@ -51,28 +51,28 @@ const aWork = () => {
 		setTimeout(() => this.type(), typeSpeed);
 	};
 	// Init on DOM LOAD
-	document.addEventListener("DOMContentLoaded", init);
+	document.addEventListener('DOMContentLoaded', init);
 
 	// init App
 	function init() {
-		const textElement = document.querySelector(".a-work");
-		const words = JSON.parse(textElement.getAttribute("data-words"));
-		const wait = textElement.getAttribute("data-wait");
+		const textElement = document.querySelector('.a-work');
+		const words = JSON.parse(textElement.getAttribute('data-words'));
+		const wait = textElement.getAttribute('data-wait');
 		// init typeWriter
 		new TypeWriter(textElement, words, wait);
 	}
 };
 
 const stickyNavbar = () => {
-	const sticky = document.querySelector(".navbar");
+	const sticky = document.querySelector('.navbar');
 
 	addClassHeader = () => {
-		sticky.classList.add("sticky");
+		sticky.classList.add('sticky');
 	};
 	removeClassHeader = () => {
-		sticky.classList.remove("sticky");
+		sticky.classList.remove('sticky');
 	};
-	window.addEventListener("scroll", function () {
+	window.addEventListener('scroll', function () {
 		let scrollDown = window.scrollY;
 		if (scrollDown > 0) {
 			addClassHeader();
@@ -83,16 +83,16 @@ const stickyNavbar = () => {
 };
 
 const hamburgerToggle = () => {
-	const burger = document.querySelector(".hamburger-btn");
-	const menu = document.querySelector(".menu");
-	const navLinks = document.querySelectorAll(".menu li");
+	const burger = document.querySelector('.hamburger-btn');
+	const menu = document.querySelector('.menu');
+	const navLinks = document.querySelectorAll('.menu li');
 
-	burger.addEventListener("click", () => {
-		menu.classList.toggle("active");
+	burger.addEventListener('click', () => {
+		menu.classList.toggle('active');
 
 		navLinks.forEach((link, index) => {
 			if (link.style.animation) {
-				link.style.animation = "";
+				link.style.animation = '';
 			} else {
 				link.style.animation = `navLinkFade 0.5s ease forwards ${
 					index / 7 + 0.6
