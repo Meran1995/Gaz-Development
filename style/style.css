@@ -128,6 +128,7 @@ html {
 }
 .develop-me {
 	position: absolute;
+	width: 100%;
 }
 .a-work {
 	font-size: 22px;
@@ -513,14 +514,21 @@ section {
 	.fields
 	.field
 	input,
-textarea,
+.contact
+	.container
+	.vis-contact
+	.contact-title
+	.form-content
+	.field-area
+	.textarea
+	textarea,
 .field input {
 	height: 100%;
 	width: 100%;
 	border-radius: 1px solid lightgrey;
 	border-radius: 10px;
 	outline: none;
-	padding: 0 15px;
+	padding: 15px;
 	font-size: 18px;
 	font-weight: bold;
 }
@@ -915,6 +923,7 @@ textarea,
 @media (max-width: 545px) {
 	.home .container .home-content .content-name {
 		padding: 0 0 30px 30px;
+		bottom: 80px;
 	}
 	.header .container .navbar .margin-around .menu li a {
 		font-size: 25px;
@@ -1120,22 +1129,31 @@ textarea,
 		.fields
 		.field
 		input,
-	textarea,
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.form-content
+		.field-area
+		.textarea
+		textarea,
 	.field input {
 		font-size: 14px;
 	}
 	.contact
-	.container
-	.vis-contact
-	.contact-title
-	.form-content
-	.field-area
-	.btn-area
-	.button {
-	height: 40px;
-	width: 100px;
+		.container
+		.vis-contact
+		.contact-title
+		.form-content
+		.field-area
+		.btn-area
+		.button {
+		height: 40px;
+		width: 100px;
+	}
 }
-}
+
+/* Footer */
 @media (max-width: 390px) {
 	.header .container .navbar.sticky {
 		padding: 0 20px;
