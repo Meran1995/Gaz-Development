@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200;300;400&family=Noto+Serif+KR:wght@200;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200;300;400&family=Noto+Serif+KR:wght@200;400;500&family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap');
 
 * {
 	margin: 0;
@@ -335,9 +335,6 @@ section {
 	font-size: 16px;
 }
 /* Contact */
-#contact {
-	height: 95vh;
-}
 .contact .container .vis-contact .contact-title {
 	display: flex;
 	flex-wrap: wrap;
@@ -592,6 +589,26 @@ section {
 	border: 3px solid #000000;
 	color: #0000ff;
 }
+/* Footer */
+footer {
+	background-color: #000;
+	padding: 50px;
+}
+.rights {
+	color: #fff;
+	text-align: center;
+}
+h5 {
+	font-size: 15px;
+	padding: 10px 0;
+	margin-bottom: 10px;
+}
+footer .rights div a {
+	font-size: 22px;
+	padding: 16px;
+	cursor: pointer;
+	color: #fff;
+}
 /* media query */
 @media (max-width: 1300px) {
 	.home .container {
@@ -747,6 +764,15 @@ section {
 		p {
 		font-size: 18px;
 	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.form-content
+		.field-area
+		.btn-area {
+		margin-top: 40px;
+	}
 }
 @media (max-width: 768px) {
 	.home .container {
@@ -810,6 +836,9 @@ section {
 	}
 	section {
 		padding: 80px 0 0 0;
+	}
+	#contact {
+		padding: 90px 0;
 	}
 	.contact
 		.container
@@ -918,6 +947,23 @@ section {
 		.field
 		input {
 		width: 100%;
+	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.form-content
+		.field-area
+		.btn-area {
+		margin-top: 20px;
+	}
+	h5 {
+		font-size: 12px;
+		padding: 8px 0;
+	}
+	footer .rights div a {
+		font-size: 20px;
+		padding: 14px;
 	}
 }
 @media (max-width: 545px) {
@@ -1046,6 +1092,15 @@ section {
 		line-height: 60px;
 		font-size: 30px;
 	}
+	footer {
+		padding: 40px;
+	}
+	h5 {
+		font-size: 10px;
+	}
+	footer .rights div a {
+		font-size: 18px;
+	}
 }
 @media (max-width: 460px) {
 	.header .container .navbar {
@@ -1151,6 +1206,18 @@ section {
 		height: 40px;
 		width: 100px;
 	}
+	.contact
+		.container
+		.vis-contact
+		.contact-title
+		.form-content
+		.field-area
+		.btn-area {
+		margin-top: 10px;
+	}
+	#contact {
+		padding: 80px 0;
+	}
 }
 
 /* Footer */
@@ -1245,6 +1312,15 @@ section {
 		width: 50px;
 		line-height: 50px;
 		font-size: 25px;
+	}
+	footer {
+		padding: 35px;
+	}
+	h5 {
+		font-size: 10px;
+	}
+	footer .rights div a {
+		font-size: 15px;
 	}
 }
 @media (max-width: 320px) {
