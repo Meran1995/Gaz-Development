@@ -76,15 +76,12 @@ html {
 	margin: 5px;
 	transition: all 1s ease;
 }
-
 .rotate .bar1 {
 	transform: rotate(-45deg) translate(-5px, 6px);
 }
-
 .rotate .bar2 {
 	opacity: 0;
 }
-
 .rotate .bar3 {
 	transform: rotate(45deg) translate(-5px, -6px);
 }
@@ -273,11 +270,102 @@ section {
 	color: #0000ff;
 }
 .projects .container .project-view .project-content .project-img-sector {
-	margin: 15px;
-}
-.projects .container .project-view .project-content .project-img-sector img {
 	width: 350px;
 	height: 350px;
+	padding: 24px;
+	background: #fff;
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	transition: 0.6s ease-out;
+	box-shadow: 0 10px 10px rgba(0, 0, 0.5);
+	margin: 20px;
+}
+.projects .container .project-view .project-content .project-img-sector:hover {
+	transform: translateY(15px);
+}
+.projects
+	.container
+	.project-view
+	.project-content
+	.project-img-sector:hover::before {
+	opacity: 1;
+}
+.projects
+	.container
+	.project-view
+	.project-content
+	.project-img-sector:hover
+	.overlay {
+	opacity: 1;
+	transform: translateY(0);
+}
+.projects
+	.container
+	.project-view
+	.project-content
+	.project-img-sector::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #000, transparent);
+	z-index: 9;
+	transition: 0.5s;
+	opacity: 0;
+}
+.projects .container .project-view .project-content .project-img-sector img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+.projects
+	.container
+	.project-view
+	.project-content
+	.project-img-sector
+	.overlay {
+	position: relative;
+	z-index: 10;
+	opacity: 0;
+	transition: 0.5s;
+	transform: translate(-50%, -50%);
+}
+.projects
+	.container
+	.project-view
+	.project-content
+	.project-img-sector
+	.overlay
+	.overlay-txt {
+	color: #fff;
+}
+.projects
+	.container
+	.project-view
+	.project-content
+	.project-img-sector
+	.overlay
+	h5 {
+	margin: 0;
+	letter-spacing: 3px;
+}
+.projects
+	.container
+	.project-view
+	.project-content
+	.project-img-sector
+	.overlay
+	p {
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-top: 8px;
 }
 /* Skills & Tools Section */
 .skills-tools .container .skills-tools-view .skills-tools-title,
@@ -614,9 +702,9 @@ footer .rights div a {
 	.home .container {
 		margin-left: 0;
 	}
-	.projects .container .project-view .project-content .project-img-sector img {
-		width: 350px;
-		height: 350px;
+	.projects .container .project-view .project-content .project-img-sector {
+		width: 250px;
+		height: 250px;
 	}
 }
 @media (max-width: 1235px) {
@@ -745,15 +833,15 @@ footer .rights div a {
 	.header .container .navbar .margin-around .menu li a {
 		font-size: 30px;
 	}
-	.projects .container .project-view .project-content .project-img-sector img {
-		width: 550px;
-		height: 550px;
-	}
 	.projects .container .project-view .project-title .title-content h1 {
 		font-size: 45px;
 	}
 	.projects .container .project-view .project-types {
 		padding: 0 60px;
+	}
+	.projects .container .project-view .project-content .project-img-sector {
+		width: 500px;
+		height: 500px;
 	}
 	.contact
 		.container
@@ -802,9 +890,6 @@ footer .rights div a {
 	.projects .container .project-view .project-title .title-content p {
 		width: 100%;
 	}
-	.projects .container .project-view .project-content .project-img-sector img {
-		padding: 0;
-	}
 	.projects .container .project-view .project-types {
 		padding: 0;
 	}
@@ -814,6 +899,10 @@ footer .rights div a {
 	.projects .container .project-view .project-types .portfolio-subtitles a {
 		font-size: 18px;
 		flex: 100%;
+	}
+	.projects .container .project-view .project-content .project-img-sector {
+		width: 400px;
+		height: 400px;
 	}
 	.skills-tools .container .skills-tools-view .skills-tools-content {
 		padding: 0 10px;
@@ -977,6 +1066,13 @@ footer .rights div a {
 	.header .container .navbar {
 		padding: 0 50px;
 	}
+	.header .container .navbar .logo a i {
+		padding-left: 25px;
+	}
+	.projects .container .project-view .project-content .project-img-sector {
+		width: 350px;
+		height: 350px;
+	}
 	.name-me {
 		font-size: 30px;
 		line-height: 1;
@@ -1016,10 +1112,6 @@ footer .rights div a {
 	}
 	.projects .container .project-view .project-content {
 		padding: 0;
-	}
-	.projects .container .project-view .project-content .project-img-sector img {
-		width: 420px;
-		height: 420px;
 	}
 	.skills-tools .container .skills-tools-view .skills-tools-content {
 		padding: 0 5px;
@@ -1109,6 +1201,10 @@ footer .rights div a {
 	.home .container .home-content .content-name {
 		padding: 0 0 10px 10px;
 	}
+	.projects .container .project-view .project-content .project-img-sector {
+		width: 300px;
+		height: 300px;
+	}
 	.vis-content .img-sector .img img {
 		width: 300px;
 		height: 200px;
@@ -1121,10 +1217,6 @@ footer .rights div a {
 	}
 	.about .container .vis-content .about-content .about-me h2 {
 		font-size: 16px;
-	}
-	.projects .container .project-view .project-content .project-img-sector img {
-		width: 380px;
-		height: 380px;
 	}
 	.projects
 		.container
@@ -1219,8 +1311,6 @@ footer .rights div a {
 		padding: 80px 0;
 	}
 }
-
-/* Footer */
 @media (max-width: 390px) {
 	.header .container .navbar.sticky {
 		padding: 0 20px;
@@ -1233,6 +1323,10 @@ footer .rights div a {
 	}
 	.header .container .navbar {
 		padding: 0 25px;
+	}
+	.projects .container .project-view .project-content .project-img-sector {
+		width: 200px;
+		height: 200px;
 	}
 	.cv-button {
 		padding: 3px 6px 3px 6px;
@@ -1251,10 +1345,6 @@ footer .rights div a {
 	.projects .container .project-view .project-content .project-img-sector {
 		margin: 0;
 		padding: 0;
-	}
-	.projects .container .project-view .project-content .project-img-sector img {
-		width: 320px;
-		height: 320px;
 	}
 	.skills-tools
 		.container
@@ -1326,11 +1416,6 @@ footer .rights div a {
 @media (max-width: 320px) {
 	.header .container .navbar.sticky {
 		padding: 0 10px;
-	}
-	.projects .container .project-view .project-content .project-img-sector img {
-		width: 275px;
-		height: 275px;
-		padding: 0;
 	}
 	.skills-tools
 		.container
