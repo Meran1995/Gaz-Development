@@ -225,7 +225,8 @@ section {
 /* Project */
 .projects .container .project-view .project-title,
 .project-types,
-.project-content {
+.project-content,
+.upcomming-project {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -366,6 +367,11 @@ section {
 	font-size: 15px;
 	letter-spacing: 1px;
 	margin-top: 8px;
+}
+.projects .container .project-view .upcomming-project {
+	margin: 22px;
+	font-size: 12px;
+	font-weight: 600;
 }
 /* Skills & Tools Section */
 .skills-tools .container .skills-tools-view .skills-tools-title,
@@ -1325,8 +1331,11 @@ footer .rights div a {
 		padding: 0 25px;
 	}
 	.projects .container .project-view .project-content .project-img-sector {
-		width: 200px;
-		height: 200px;
+		width: 250px;
+		height: 250px;
+	}
+	.projects .container .project-view .upcomming-project {
+		font-size: 10px;
 	}
 	.cv-button {
 		padding: 3px 6px 3px 6px;
@@ -1341,10 +1350,6 @@ footer .rights div a {
 	}
 	.about .container .vis-content .about-content .about-me h2 {
 		font-size: 16px;
-	}
-	.projects .container .project-view .project-content .project-img-sector {
-		margin: 0;
-		padding: 0;
 	}
 	.skills-tools
 		.container
@@ -1416,6 +1421,13 @@ footer .rights div a {
 @media (max-width: 320px) {
 	.header .container .navbar.sticky {
 		padding: 0 10px;
+	}
+	.projects .container .project-view .project-content .project-img-sector {
+		width: 200px;
+		height: 200px;
+	}
+	.projects .container .project-view .upcomming-project {
+		font-size: 8px;
 	}
 	.skills-tools
 		.container
