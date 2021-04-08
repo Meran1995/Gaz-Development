@@ -51,6 +51,10 @@ html {
 	color: #fff;
 	transition: color 0.3s ease;
 }
+.header .container .navbar .logo a:hover {
+	color: #0000ff;
+	transition: color 0.3s ease;
+}
 .header .container .navbar .logo a i {
 	font-size: 25px;
 	padding-left: 50px;
@@ -702,6 +706,10 @@ footer .rights div a {
 	padding: 16px;
 	cursor: pointer;
 	color: #fff;
+}
+footer .rights div a:hover {
+	color: #0000ff;
+	transition: color 0.3s ease;
 }
 /* media query */
 @media (max-width: 1300px) {
