@@ -248,7 +248,11 @@ section {
 .projects .container .project-view .project-types .portfolio-subtitles {
 	padding: 30px 0 50px 0;
 }
-.projects .container .project-view .project-types .portfolio-subtitles button {
+.projects .container .project-view .project-types .portfolio-subtitles ul{
+	display: flex;
+}
+.projects .container .project-view .project-types .portfolio-subtitles ul li {
+	list-style-type: none;
 	font-size: 18px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -256,22 +260,17 @@ section {
 	border: none;
 	background-color: #fff;
 }
-.projects
-	.container
-	.project-view
-	.project-types
-	.portfolio-subtitles
-	button
-	a {
+.projects .container .project-view .project-types .portfolio-subtitles ul li {
 	color: #000;
+	outline: none;
+	cursor: pointer;
 }
 .projects
 	.container
 	.project-view
 	.project-types
 	.portfolio-subtitles
-	button
-	a:hover {
+	ul li:hover {
 	color: #0000ff;
 }
 .projects .container .project-view .project-content .project-img-sector {
@@ -1237,7 +1236,7 @@ footer .rights div a:hover {
 		.project-view
 		.project-types
 		.portfolio-subtitles
-		button {
+		ul li {
 		font-size: 12px;
 	}
 	.skills-tools

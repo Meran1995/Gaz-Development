@@ -63,6 +63,8 @@ const aWork = () => {
 	}
 };
 
+aWork();
+
 const stickyNavbar = () => {
 	const sticky = document.querySelector('.navbar');
 
@@ -81,6 +83,8 @@ const stickyNavbar = () => {
 		}
 	});
 };
+
+stickyNavbar();
 
 const hamburgerToggle = () => {
 	const burger = document.querySelector('.hamburger-btn');
@@ -104,6 +108,81 @@ const hamburgerToggle = () => {
 	});
 };
 
-aWork();
-stickyNavbar();
 hamburgerToggle();
+
+const filter = () => {
+	const tabs = document.querySelectorAll('.filterBtn li');
+	const all = document.querySelectorAll('.all');
+	const js = document.querySelectorAll('.js');
+	const react = document.querySelectorAll('.project-content .react');
+	const node = document.querySelectorAll('.project-content .node');
+	const restApi = document.querySelectorAll('.project-content .rest-api');
+
+	tabs.forEach((tab) => {
+		tab.addEventListener('click', () => {
+			tabs.forEach((tab) => {
+				tab.classList.remove('active');
+			});
+			tab.classList.add('active');
+
+			const tabAttr = tab.getAttribute('data-tabs');
+
+			if (tabAttr === 'js') {
+				js.forEach((javascript) => {
+					javascript.style.display = 'block';
+				});
+			} else if (tabAttr === 'react') {
+				react.forEach((r) => {
+					r.style.display = 'block';
+				});
+			} else if (tabAttr === 'node') {
+				node.forEach((nodejs) => {
+					nodejs.style.display = 'block';
+				});
+			} else if (tabAttr === 'rest-api') {
+				restApi.forEach((rapi) => {
+					rapi.style.display = 'block';
+				});
+			} else
+				all.forEach((item) => {
+					item.style.display = 'block';
+				});
+				// all section need to fix it!!!
+		});
+	});
+};
+
+filter();
+
+// const filterProjects = () => {
+// 	let filterBtn = document.querySelector('#filterproject').children;
+// 	let displayFilter = document.querySelector('#filteritems').children;
+
+// 	for (let i = 0; i < filterBtn.length; i++) {
+// 		filterBtn[i].onclick = function () {
+// 			for (let x = 0; x < filterBtn.length; x++) {
+// 				filterBtn[x].classList.remove('active');
+// 			}
+// 		};
+// 		this.classList.add('active');
+// 		const displayItems = this.getAttribute('data-filter');
+// 		for (let z = 0; z < filterBtn.length; z++) {
+// 			displayFilter[z].style.transform = 'scale(0)';
+// 			setTimeout(() => {
+// 				displayFilter[z].style.display = 'none';
+// 			}, 500);
+
+// 			if (
+// 				displayFilter[z].getAttribute('data-category') == displayItems ||
+// 				displayItems == 'all'
+// 			) {
+// 				displayFilter[z].style.transform = 'scale(1)';
+// 				setTimeout(() => {
+// 					displayFilter[z].style.display = 'block';
+// 				}, 500);
+// 			}
+// 		}
+// 	}
+// };
+
+// filterProjects();
