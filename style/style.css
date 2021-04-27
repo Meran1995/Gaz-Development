@@ -52,7 +52,7 @@ html {
 	transition: color 0.3s ease;
 }
 .header .container .navbar .logo a:hover {
-	color: #0000ff;
+	color: #2396ff;
 	transition: color 0.3s ease;
 }
 .header .container .navbar .logo a i {
@@ -67,7 +67,7 @@ html {
 	transition: color 0.3s ease;
 }
 .header .container .navbar .margin-around .menu li a:hover {
-	color: #0000ff;
+	color: #2396ff;
 }
 .header .container .navbar .margin-around .hamburger-btn {
 	display: none;
@@ -102,7 +102,7 @@ html {
 	z-index: 9;
 }
 .background-image:nth-of-type(1) {
-	background-image: url('/style/images/Pictures/Skyline_Almere.jpg');
+	background-image: url('/style/images/Pictures/background_project_image/Skyline_Almere.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -142,12 +142,12 @@ html {
 	margin-top: 35px;
 	padding: 6px 10px 6px 10px;
 	background: #000;
-	border: 1px solid #0000ff;
+	border: 1px solid #2396ff;
 	border-radius: 8px;
 	cursor: pointer;
 }
 #cv:hover {
-	background: #0000ff;
+	background: #2396ff;
 }
 .cv-button a {
 	color: #fff;
@@ -271,7 +271,7 @@ section {
 	.project-types
 	.portfolio-subtitles
 	ul li:hover {
-	color: #0000ff;
+	color: #2396ff;
 }
 .projects .container .project-view .project-content .project-img-sector {
 	width: 350px;
@@ -489,7 +489,7 @@ section {
 	.field-contact
 	.form-contact
 	a {
-	border: 1px solid #0000ff;
+	border: 2px solid #2396ff;
 	border-radius: 50%;
 	color: #000;
 	height: 50px;
@@ -507,8 +507,8 @@ section {
 	.field-contact
 	.form-contact
 	a:hover {
-	border: 2px solid #000;
-	color: #0000ff;
+		border: 2px solid #000000;
+		color: #2396ff;
 }
 
 .contact
@@ -670,8 +670,8 @@ section {
 	font-size: 20px;
 	font-weight: 500;
 	color: #000;
-	border: 3px solid #0000ff;
-	background-color: #ffffff;
+	border: 3px solid #ffffff;
+	background-color: #2396ff ;
 	cursor: pointer;
 }
 .contact
@@ -684,7 +684,7 @@ section {
 	.button
 	button:hover {
 	border: 3px solid #000000;
-	color: #0000ff;
+	color: #ffffff;
 }
 /* Footer */
 footer {
@@ -707,7 +707,7 @@ footer .rights div a {
 	color: #fff;
 }
 footer .rights div a:hover {
-	color: #0000ff;
+	color: #2396ff;
 	transition: color 0.3s ease;
 }
 /* media query */
