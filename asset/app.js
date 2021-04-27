@@ -112,11 +112,11 @@ hamburgerToggle();
 
 const filter = () => {
 	const tabs = document.querySelectorAll('.filterBtn li');
-	const all = document.querySelectorAll('.all');
 	const js = document.querySelectorAll('.js');
-	const react = document.querySelectorAll('.project-content .react');
-	const node = document.querySelectorAll('.project-content .node');
-	const restApi = document.querySelectorAll('.project-content .rest-api');
+	const reactJs = document.querySelectorAll('.reactjs');
+	const node = document.querySelectorAll('.node');
+	const restApi = document.querySelectorAll('.rest-api');
+	const all = document.querySelectorAll('.all');
 
 	tabs.forEach((tab) => {
 		tab.addEventListener('click', () => {
@@ -127,13 +127,19 @@ const filter = () => {
 
 			const tabAttr = tab.getAttribute('data-tabs');
 
+			all.forEach((item) => {
+				item.style.display = 'none';
+				console.log('all');
+			});
+			console.log('all');
+
 			if (tabAttr === 'js') {
 				js.forEach((javascript) => {
 					javascript.style.display = 'block';
 				});
-			} else if (tabAttr === 'react') {
-				react.forEach((r) => {
-					r.style.display = 'block';
+			} else if (tabAttr === 'reactjs') {
+				reactJs.forEach((react) => {
+					react.style.display = 'block';
 				});
 			} else if (tabAttr === 'node') {
 				node.forEach((nodejs) => {
@@ -147,42 +153,9 @@ const filter = () => {
 				all.forEach((item) => {
 					item.style.display = 'block';
 				});
-				// all section need to fix it!!!
+			// all section need to fix it!!!
 		});
 	});
 };
 
 filter();
-
-// const filterProjects = () => {
-// 	let filterBtn = document.querySelector('#filterproject').children;
-// 	let displayFilter = document.querySelector('#filteritems').children;
-
-// 	for (let i = 0; i < filterBtn.length; i++) {
-// 		filterBtn[i].onclick = function () {
-// 			for (let x = 0; x < filterBtn.length; x++) {
-// 				filterBtn[x].classList.remove('active');
-// 			}
-// 		};
-// 		this.classList.add('active');
-// 		const displayItems = this.getAttribute('data-filter');
-// 		for (let z = 0; z < filterBtn.length; z++) {
-// 			displayFilter[z].style.transform = 'scale(0)';
-// 			setTimeout(() => {
-// 				displayFilter[z].style.display = 'none';
-// 			}, 500);
-
-// 			if (
-// 				displayFilter[z].getAttribute('data-category') == displayItems ||
-// 				displayItems == 'all'
-// 			) {
-// 				displayFilter[z].style.transform = 'scale(1)';
-// 				setTimeout(() => {
-// 					displayFilter[z].style.display = 'block';
-// 				}, 500);
-// 			}
-// 		}
-// 	}
-// };
-
-// filterProjects();
