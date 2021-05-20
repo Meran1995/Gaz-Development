@@ -139,7 +139,6 @@ html {
 #cv {
 	border: none;
 	display: inline-block;
-	margin-top: 35px;
 	padding: 6px 10px 6px 10px;
 	background: #000;
 	border: 1px solid #2396ff;
@@ -179,7 +178,7 @@ section {
 }
 .vis-content .about-content {
 	padding: 10px;
-	width: 40%;
+	width: 45%;
 }
 .vis-content .about-content .about-me {
 	padding: 5px;
@@ -187,13 +186,13 @@ section {
 }
 .about .container .vis-content .about-content .about-me h2 {
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 16px;
 	padding: 0 0 15px 0;
 }
 .about .container .vis-content .about-content .about-me .paragraaf p {
 	font-size: 14px;
 	font-weight: 500;
-	line-height: 27px;
+	line-height: 24px;
 	margin-bottom: 5px;
 }
 #upper {
@@ -238,7 +237,7 @@ section {
 .projects .container .project-view .project-title .title-content h1 {
 	text-align: center;
 	padding: 5px;
-	font-size: 50px;
+	font-size: 45px;
 }
 .projects .container .project-view .project-title .title-content p {
 	font-size: 18px;
@@ -246,7 +245,7 @@ section {
 	padding: 5px;
 }
 .projects .container .project-view .project-types .portfolio-subtitles {
-	padding: 30px 0 50px 0;
+	padding: 30px 0 30px 0;
 }
 .projects .container .project-view .project-types .portfolio-subtitles ul {
 	display: flex;
@@ -275,9 +274,9 @@ section {
 	color: #2396ff;
 }
 .projects .container .project-view .project-content .project-img-sector {
-	width: 350px;
-	height: 350px;
-	padding: 24px;
+	width: 320px;
+	height: 320px;
+	padding: 22px;
 	background: #fff;
 	position: relative;
 	display: flex;
@@ -388,11 +387,11 @@ section {
 .title-content h1 {
 	text-align: center;
 	padding: 5px;
-	font-size: 50px;
+	font-size: 45px;
 }
 .skills-tools .container .skills-tools-view .skills-tools-title,
 .skills-tools-content p {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 	padding: 15px 5px;
 	text-align: center;
@@ -402,8 +401,8 @@ section {
 }
 .skills-tools .container .skills-tools-view .skills-tools-content .img-content {
 	width: 22%;
-	padding: 0 20px;
-	margin: 20px 0;
+	padding: 0 10px;
+	margin: 10px 0;
 }
 .skills-tools
 	.container
@@ -411,8 +410,8 @@ section {
 	.skills-tools-content
 	.img-content
 	img {
-	width: 80px;
-	height: 80px;
+	width: 50px;
+	height: 50px;
 }
 .skills-tools
 	.container
@@ -462,7 +461,8 @@ section {
 	.form-content
 	.form-contact-info
 	h1 {
-	font-size: 60px;
+	font-size: 40px;
+	padding-bottom: 10px;
 }
 .contact
 	.container
