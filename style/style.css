@@ -248,7 +248,7 @@ section {
 .projects .container .project-view .project-types .portfolio-subtitles {
 	padding: 30px 0 50px 0;
 }
-.projects .container .project-view .project-types .portfolio-subtitles ul{
+.projects .container .project-view .project-types .portfolio-subtitles ul {
 	display: flex;
 }
 .projects .container .project-view .project-types .portfolio-subtitles ul li {
@@ -270,7 +270,8 @@ section {
 	.project-view
 	.project-types
 	.portfolio-subtitles
-	ul li:hover {
+	ul
+	li:hover {
 	color: #2396ff;
 }
 .projects .container .project-view .project-content .project-img-sector {
@@ -444,6 +445,9 @@ section {
 .contact .container .vis-contact .contact-title form {
 	width: calc(60% - 30px);
 }
+.contact .container .vis-contact .contact-title .form-content {
+	margin: 0 10px;
+}
 .contact
 	.container
 	.vis-contact
@@ -507,8 +511,8 @@ section {
 	.field-contact
 	.form-contact
 	a:hover {
-		border: 2px solid #000000;
-		color: #2396ff;
+	border: 2px solid #000000;
+	color: #2396ff;
 }
 
 .contact
@@ -671,7 +675,7 @@ section {
 	font-weight: 500;
 	color: #000;
 	border: 3px solid #ffffff;
-	background-color: #2396ff ;
+	background-color: #2396ff;
 	cursor: pointer;
 }
 .contact
@@ -709,6 +713,99 @@ footer .rights div a {
 footer .rights div a:hover {
 	color: #2396ff;
 	transition: color 0.3s ease;
+}
+/* animation */
+.reveal {
+	position: relative;
+	transition: opacity 500ms;
+	opacity: 0;
+}
+.reveal.active {
+	opacity: 1;
+}
+.active .fade-left {
+	animation: fade-in-left 2s ease-in-out both;
+}
+.active .fade-right {
+	animation: fade-in-right 2s ease-in-out both;
+}
+.active .fade-top {
+	animation: fade-in-top 2s ease-in-out both;
+}
+.active .fade-down {
+	animation: fade-in-down 2s ease-in-out both;
+}
+.active .fade {
+	animation: skills-tools-num1 2s ease-in-out both;
+}
+.active .num2 {
+	animation-delay: 0.5s;
+}
+.active .num3 {
+	animation-delay: 0.8s;
+}
+.active .num4 {
+	animation-delay: 1.2s;
+}
+@keyframes skills-tools-num1 {
+	0% {
+		-webkit-transform: translateX(-100px);
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes fade-in-left {
+	0% {
+		-webkit-transform: translateX(-100px);
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes fade-in-right {
+	0% {
+		-webkit-transform: translateX(100px);
+		transform: translateX(100px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes fade-in-top {
+	0% {
+		-webkit-transform: translateY(-100px);
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+@keyframes fade-in-down {
+	0% {
+		-webkit-transform: translateY(100px);
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 /* media query */
 @media (max-width: 1300px) {
@@ -1231,12 +1328,7 @@ footer .rights div a:hover {
 	.about .container .vis-content .about-content .about-me h2 {
 		font-size: 16px;
 	}
-	.projects
-		.container
-		.project-view
-		.project-types
-		.portfolio-subtitles
-		ul li {
+	.projects .container .project-view .project-types .portfolio-subtitles ul li {
 		font-size: 12px;
 	}
 	.skills-tools

@@ -153,9 +153,32 @@ const filter = () => {
 				all.forEach((item) => {
 					item.style.display = 'block';
 				});
-			// all section need to fix it!!!
 		});
 	});
 };
 
 filter();
+
+const animationSection = () => {
+	const reveals = document.querySelectorAll('.reveal');
+
+	addClassFadeEffect = () => {
+		for (let i = 0; i < reveals.length; i++) {
+			let windowHeight = window.innerHeight;
+			let reavealTop = reveals[i].getBoundingClientRect().top;
+			let revealPoint = 150;
+
+			if (reavealTop < windowHeight - revealPoint) {
+				reveals[i].classList.add('active');
+			}
+		}
+	};
+
+	window.addEventListener('scroll', function () {
+		addClassFadeEffect();
+	});
+};
+animationSection();
+
+//nu de effecten fixen de connectie is nu gelukt. V
+// oor elke section een animation fixen
