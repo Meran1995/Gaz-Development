@@ -14,6 +14,21 @@ html {
 .container {
 	padding: 0 75px;
 }
+/* same code */
+section {
+	padding: 100px 0;
+}
+.vis-content, .projects .container .project-view .project-title,
+.project-types,
+.project-content,
+.upcomming-project, .skills-tools .container .skills-tools-view .skills-tools-title,
+.skills-tools-content, .contact .container .vis-contact .contact-title  {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	box-sizing: border-box;
+}
 /* navbar */
 .navbar {
 	position: fixed;
@@ -139,6 +154,7 @@ html {
 #cv {
 	border: none;
 	display: inline-block;
+	margin-top: 40px;
 	padding: 6px 10px 6px 10px;
 	background: #000;
 	border: 1px solid #2396ff;
@@ -154,16 +170,6 @@ html {
 	font-weight: 600;
 }
 /* about */
-section {
-	padding: 100px 0;
-}
-.vis-content {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	justify-content: space-evenly;
-	box-sizing: border-box;
-}
 .vis-content .img-sector .img {
 	margin: 5px;
 }
@@ -226,14 +232,6 @@ section {
 	color: #000;
 }
 /* Project */
-.projects .container .project-view .project-title,
-.project-types,
-.project-content,
-.upcomming-project {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
 .projects .container .project-view .project-title .title-content h1 {
 	text-align: center;
 	padding: 5px;
@@ -378,12 +376,6 @@ section {
 }
 /* Skills & Tools Section */
 .skills-tools .container .skills-tools-view .skills-tools-title,
-.skills-tools-content {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-.skills-tools .container .skills-tools-view .skills-tools-title,
 .title-content h1 {
 	text-align: center;
 	padding: 5px;
@@ -432,12 +424,6 @@ section {
 	font-size: 16px;
 }
 /* Contact */
-.contact .container .vis-contact .contact-title {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
-}
 .contact .container .vis-contact .contact-title .title-contact {
 	width: calc(40% - 30px);
 }
@@ -739,13 +725,13 @@ footer .rights div a:hover {
 	animation: skills-tools-num1 2s ease-in-out both;
 }
 .active .num2 {
-	animation-delay: 0.5s;
+	animation-delay: 0.2s;
 }
 .active .num3 {
-	animation-delay: 0.8s;
+	animation-delay: 0.5s;
 }
 .active .num4 {
-	animation-delay: 1.2s;
+	animation-delay: 0.8s;
 }
 @keyframes skills-tools-num1 {
 	0% {
@@ -884,9 +870,6 @@ footer .rights div a:hover {
 		font-size: 22px;
 		font-weight: 200;
 	}
-	.cv-button {
-		padding: 6px 10px 6px 10px;
-	}
 	.cv-button a {
 		font-size: 22px;
 	}
@@ -986,9 +969,6 @@ footer .rights div a:hover {
 	b {
 		font-size: 18px;
 		font-weight: 200;
-	}
-	.cv-button {
-		padding: 5px 8px 5px 8px;
 	}
 	.cv-button a {
 		font-size: 18px;
@@ -1186,9 +1166,6 @@ footer .rights div a:hover {
 	.name-me {
 		font-size: 30px;
 		line-height: 1;
-	}
-	.cv-button {
-		padding: 4px 7px 4px 7px;
 	}
 	.cv-button a {
 		font-size: 15px;
@@ -1435,9 +1412,6 @@ footer .rights div a:hover {
 	}
 	.projects .container .project-view .upcomming-project {
 		font-size: 10px;
-	}
-	.cv-button {
-		padding: 3px 6px 3px 6px;
 	}
 	.cv-button a {
 		font-size: 16px;
