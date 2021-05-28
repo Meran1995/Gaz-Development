@@ -759,7 +759,7 @@ footer .rights div a:hover {
 	transition: color 0.3s ease;
 }
 /* animation */
-/* .reveal {
+.reveal {
 	position: relative;
 	transition: opacity 500ms;
 	opacity: 0;
@@ -850,7 +850,7 @@ footer .rights div a:hover {
 		transform: translateY(0);
 		opacity: 1;
 	}
-} */
+}
 /* media query */
 @media (max-width: 1300px) {
 	.home .container {
