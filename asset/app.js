@@ -129,9 +129,7 @@ const filter = () => {
 
 			all.forEach((item) => {
 				item.style.display = 'none';
-				console.log('all');
 			});
-			console.log('all');
 
 			if (tabAttr === 'js') {
 				js.forEach((javascript) => {

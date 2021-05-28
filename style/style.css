@@ -18,11 +18,14 @@ html {
 section {
 	padding: 100px 0;
 }
-.vis-content, .projects .container .project-view .project-title,
+.vis-content,
+.projects .container .project-view .project-title,
 .project-types,
 .project-content,
-.upcomming-project, .skills-tools .container .skills-tools-view .skills-tools-title,
-.skills-tools-content, .contact .container .vis-contact .contact-title  {
+.upcomming-project,
+.skills-tools .container .skills-tools-view .skills-tools-title,
+.skills-tools-content,
+.contact .container .vis-contact .contact-title {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
@@ -256,8 +259,6 @@ section {
 	margin: 0 15px;
 	border: none;
 	background-color: #fff;
-}
-.projects .container .project-view .project-types .portfolio-subtitles ul li {
 	color: #000;
 	outline: none;
 	cursor: pointer;
@@ -272,60 +273,38 @@ section {
 	color: #2396ff;
 }
 .projects .container .project-view .project-content .project-img-sector {
-	width: 320px;
-	height: 320px;
-	padding: 22px;
-	background: #fff;
-	position: relative;
-	display: flex;
-	align-items: flex-end;
-	transition: 0.6s ease-out;
-	box-shadow: 0 10px 10px rgba(0, 0, 0.5);
-	margin: 20px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 5%;
+	padding: 10rem 0 0;
+	max-width: 40ch;
+	overflow: hidden;
+	transition: transform 1s ease;
 }
-.projects .container .project-view .project-content .project-img-sector:hover {
-	transform: translateY(15px);
+.projects .container .project-view .project-content .project-img-sector:hover,
+.project-img-sector:focus-within {
+	transform: scale(1.02);
 }
 .projects
 	.container
 	.project-view
 	.project-content
-	.project-img-sector:hover::before {
-	opacity: 1;
+	.project-img-sector:nth-child(1) {
+	background-image: url('/style/images/Pictures/background_project_image/tesla-image.jpg');
 }
 .projects
 	.container
 	.project-view
 	.project-content
-	.project-img-sector:hover
-	.overlay {
-	opacity: 1;
-	transform: translateY(0);
+	.project-img-sector:nth-child(2) {
+	background-image: url('/style/images/Pictures/background_project_image/farrari-image.jpg');
 }
 .projects
 	.container
 	.project-view
 	.project-content
-	.project-img-sector::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: block;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(to top, #000, transparent);
-	z-index: 9;
-	transition: 0.5s;
-	opacity: 0;
-}
-.projects .container .project-view .project-content .project-img-sector img {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	object-fit: cover;
+	.project-img-sector:nth-child(3) {
+	background-image: url('/style/images/Pictures/background_project_image/lambo-image.jpg');
 }
 .projects
 	.container
@@ -333,11 +312,33 @@ section {
 	.project-content
 	.project-img-sector
 	.overlay {
-	position: relative;
-	z-index: 10;
-	opacity: 0;
-	transition: 0.5s;
-	transform: translate(-50%, -50%);
+	padding: 2rem;
+	background: linear-gradient(
+		hsl(0 0% 0% / 0),
+		hsl(20 0% 0% / 0.5) 20%,
+		hsl(0 0% 0% / 1)
+	);
+	transform: translateY(60%);
+	transition: transform 1s ease;
+}
+.projects
+	.container
+	.project-view
+	.project-content
+	.project-img-sector:hover
+	.overlay,
+.overlay:focus-within {
+	transform: translateY(0);
+	transition-delay: 0.3s;
+}
+
+.projects
+	.container
+	.project-view
+	.project-content
+	.project-img-sector:focus-within
+	.overlay {
+	transition-duration: 0s;
 }
 .projects
 	.container
@@ -355,8 +356,35 @@ section {
 	.project-img-sector
 	.overlay
 	h5 {
-	margin: 0;
+	position: relative;
+}
+.projects
+	.container
+	.project-view
+	.project-content
+	.project-img-sector
+	.overlay
+	h5::after {
 	letter-spacing: 3px;
+	content: '';
+	position: absolute;
+	height: 4px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #2396ff;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 1s ease;
+}
+.projects
+	.container
+	.project-view
+	.project-content
+	.project-img-sector:hover
+	.overlay
+	h5::after {
+	transform: scaleX(1);
 }
 .projects
 	.container
@@ -365,9 +393,37 @@ section {
 	.project-img-sector
 	.overlay
 	p {
-	font-size: 15px;
+	font-size: 12px;
 	letter-spacing: 1px;
-	margin-top: 8px;
+	margin: 10px 0;
+	color: #fff;
+}
+.projects
+	.container
+	.project-view
+	.project-content
+	.project-img-sector
+	.overlay
+	.link-project {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 10px;
+	background: #2396ff;
+	border: 3px solid #000;
+	border-radius: 10%;
+	color: #fff;
+}
+.projects
+	.container
+	.project-view
+	.project-content
+	.project-img-sector
+	.overlay
+	.link-project:hover {
+	border: 3px solid #fff;
+	background: #2396ff;
 }
 .projects .container .project-view .upcomming-project {
 	margin: 22px;
@@ -660,7 +716,7 @@ section {
 	font-size: 20px;
 	font-weight: 500;
 	color: #000;
-	border: 3px solid #ffffff;
+	border: 3px solid #fff;
 	background-color: #2396ff;
 	cursor: pointer;
 }
@@ -701,7 +757,7 @@ footer .rights div a:hover {
 	transition: color 0.3s ease;
 }
 /* animation */
-.reveal {
+/* .reveal {
 	position: relative;
 	transition: opacity 500ms;
 	opacity: 0;
@@ -792,7 +848,7 @@ footer .rights div a:hover {
 		transform: translateY(0);
 		opacity: 1;
 	}
-}
+} */
 /* media query */
 @media (max-width: 1300px) {
 	.home .container {
