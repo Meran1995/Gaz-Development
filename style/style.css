@@ -244,6 +244,7 @@ section {
 	font-size: 18px;
 	font-weight: 400;
 	padding: 5px;
+	text-align: center;
 }
 .projects .container .project-view .project-types .portfolio-subtitles {
 	padding: 30px 0 30px 0;
@@ -273,11 +274,13 @@ section {
 	color: #2396ff;
 }
 .projects .container .project-view .project-content .project-img-sector {
+	display: flex;
+	justify-content: center;
 	background-size: cover;
 	background-position: center;
 	border-radius: 5%;
 	padding: 10rem 0 0;
-	max-width: 40ch;
+	max-width: 35ch;
 	overflow: hidden;
 	transition: transform 1s ease;
 }
@@ -331,7 +334,6 @@ section {
 	transform: translateY(0);
 	transition-delay: 0.3s;
 }
-
 .projects
 	.container
 	.project-view
@@ -855,8 +857,15 @@ footer .rights div a:hover {
 		margin-left: 0;
 	}
 	.projects .container .project-view .project-content .project-img-sector {
-		width: 250px;
-		height: 250px;
+		max-width: 30ch;
+	}
+	.projects
+		.container
+		.project-view
+		.project-content
+		.project-img-sector
+		.overlay {
+		transform: translateY(65%);
 	}
 }
 @media (max-width: 1235px) {
@@ -905,6 +914,10 @@ footer .rights div a:hover {
 		display: block;
 		position: relative;
 	}
+	.projects .container .project-view .project-content .project-img-sector {
+		max-width: 25ch;
+		padding: 8rem 0 0;
+	}
 	.about .container .vis-content .about-content .about-me {
 		text-align: center;
 	}
@@ -935,11 +948,6 @@ footer .rights div a:hover {
 	}
 	.about .container .vis-content .about-content {
 		flex: 100%;
-	}
-	.projects .container .project-view .project-title .title-content p {
-		font-size: 16px;
-		flex: 100%;
-		text-align: center;
 	}
 	.skills-tools .container .skills-tools-view .skills-tools-content {
 		padding: 0 50px;
@@ -982,15 +990,8 @@ footer .rights div a:hover {
 	.header .container .navbar .margin-around .menu li a {
 		font-size: 30px;
 	}
-	.projects .container .project-view .project-title .title-content h1 {
-		font-size: 45px;
-	}
-	.projects .container .project-view .project-types {
-		padding: 0 60px;
-	}
 	.projects .container .project-view .project-content .project-img-sector {
-		width: 500px;
-		height: 500px;
+		max-width: 28ch;
 	}
 	.contact
 		.container
@@ -1029,26 +1030,64 @@ footer .rights div a:hover {
 	.cv-button a {
 		font-size: 18px;
 	}
+	.projects .container .project-view .project-title .title-content h1 {
+		padding: 5px;
+		font-size: 40px;
+	}
+	.projects .container .project-view .project-title .title-content p {
+		font-size: 14px;
+	}
+	.projects .container .project-view .project-types .portfolio-subtitles ul li {
+		font-size: 16px;
+		margin: 0 10px;
+	}
+	.projects .container .project-view .project-content .project-img-sector {
+		max-width: 15ch;
+		padding: 6rem 0 0;
+		flex: 100%;
+	}
+	.projects
+		.container
+		.project-view
+		.project-content
+		.project-img-sector
+		.overlay {
+		padding: 15px;
+		transform: translateY(65%);
+	}
+	.projects
+		.container
+		.project-view
+		.project-content
+		.project-img-sector
+		.overlay
+		h5::after {
+		height: 2px;
+	}
+	.projects
+		.container
+		.project-view
+		.project-content
+		.project-img-sector
+		.overlay
+		p {
+		font-size: 8px;
+		margin: 5px 0;
+	}
+	.projects
+		.container
+		.project-view
+		.project-content
+		.project-img-sector
+		.overlay
+		.link-project {
+		font-size: 10px;
+		font-weight: 600;
+		padding: 5px;
+	}
 	.vis-content .img-sector .img img {
 		width: 400px;
 		height: 300px;
-	}
-	.projects .container .project-view .project-title .title-content p {
-		width: 100%;
-	}
-	.projects .container .project-view .project-types {
-		padding: 0;
-	}
-	.projects .container .project-view .project-types .portfolio-subtitles {
-		text-align: center;
-	}
-	.projects .container .project-view .project-types .portfolio-subtitles a {
-		font-size: 18px;
-		flex: 100%;
-	}
-	.projects .container .project-view .project-content .project-img-sector {
-		width: 400px;
-		height: 400px;
 	}
 	.skills-tools .container .skills-tools-view .skills-tools-content {
 		padding: 0 10px;
@@ -1215,9 +1254,41 @@ footer .rights div a:hover {
 	.header .container .navbar .logo a i {
 		padding-left: 25px;
 	}
-	.projects .container .project-view .project-content .project-img-sector {
-		width: 350px;
-		height: 350px;
+	.projects .container .project-view .project-title .title-content p {
+		font-size: 12px;
+	}
+	.projects .container .project-view .project-types .portfolio-subtitles ul li {
+		font-size: 14px;
+		margin: 0 10px;
+	}
+	.projects
+		.container
+		.project-view
+		.project-content
+		.project-img-sector
+		.overlay {
+		padding: 12px;
+		transform: translateY(70%);
+	}
+	.projects
+		.container
+		.project-view
+		.project-content
+		.project-img-sector
+		.overlay
+		p {
+		font-size: 8px;
+	}
+	.projects
+		.container
+		.project-view
+		.project-content
+		.project-img-sector
+		.overlay
+		.link-project {
+		font-size: 8px;
+		font-weight: 600;
+		padding: 3px;
 	}
 	.name-me {
 		font-size: 30px;
@@ -1252,9 +1323,6 @@ footer .rights div a:hover {
 	}
 	.about .container .vis-content .about-content .about-me .cv-button a {
 		font-size: 18px;
-	}
-	.projects .container .project-view .project-content {
-		padding: 0;
 	}
 	.skills-tools .container .skills-tools-view .skills-tools-content {
 		padding: 0 5px;
@@ -1344,9 +1412,32 @@ footer .rights div a:hover {
 	.home .container .home-content .content-name {
 		padding: 0 0 10px 10px;
 	}
+	.about .container .vis-content .about-content .about-me .contact-me h6 {
+		height: 0;
+	}
+	.about .container .vis-content .about-content .about-me .contact-me .blue {
+		visibility: hidden;
+	}
+	.projects .container .project-view .project-title .title-content p {
+		font-size: 10px;
+	}
+	.projects .container .project-view .project-types .portfolio-subtitles ul li {
+		font-size: 12px;
+		margin: 0 8px;
+	}
 	.projects .container .project-view .project-content .project-img-sector {
-		width: 300px;
-		height: 300px;
+		max-width: 10ch;
+		padding: 2rem 0 0;
+		flex: 100%;
+	}
+	.projects
+		.container
+		.project-view
+		.project-content
+		.project-img-sector
+		.overlay
+		p {
+		font-size: 6px;
 	}
 	.vis-content .img-sector .img img {
 		width: 300px;
@@ -1361,9 +1452,6 @@ footer .rights div a:hover {
 	.about .container .vis-content .about-content .about-me h2 {
 		font-size: 16px;
 	}
-	.projects .container .project-view .project-types .portfolio-subtitles ul li {
-		font-size: 12px;
-	}
 	.skills-tools
 		.container
 		.skills-tools-view
@@ -1377,8 +1465,8 @@ footer .rights div a:hover {
 		.skills-tools-content
 		.img-content
 		img {
-		width: 100px;
-		height: 100px;
+		width: 80px;
+		height: 80px;
 	}
 	.contact
 		.container
@@ -1462,16 +1550,47 @@ footer .rights div a:hover {
 	.header .container .navbar {
 		padding: 0 25px;
 	}
-	.projects .container .project-view .project-content .project-img-sector {
-		width: 250px;
-		height: 250px;
-	}
-	.projects .container .project-view .upcomming-project {
-		font-size: 10px;
-	}
 	.cv-button a {
-		font-size: 16px;
-		font-weight: 400;
+		font-size: 14px;
+	}
+	.projects .container .project-view .project-title .title-content p {
+		font-size: 8px;
+	}
+	.projects .container .project-view .project-types .portfolio-subtitles ul li {
+		font-size: 10px;
+		margin: 0 6px;
+	}
+	.projects .container .project-view .project-content .project-img-sector {
+		max-width: 8ch;
+	}
+	.projects
+		.container
+		.project-view
+		.project-content
+		.project-img-sector
+		.overlay {
+		padding: 10px;
+		transform: translateY(70%);
+	}
+	.projects
+		.container
+		.project-view
+		.project-content
+		.project-img-sector
+		.overlay
+		p {
+		font-size: 6px;
+	}
+	.projects
+		.container
+		.project-view
+		.project-content
+		.project-img-sector
+		.overlay
+		.link-project {
+		font-size: 6px;
+		font-weight: 600;
+		padding: 2px;
 	}
 	.vis-content .img-sector .img img {
 		width: 280px;
@@ -1493,8 +1612,8 @@ footer .rights div a:hover {
 		.skills-tools-content
 		.img-content
 		img {
-		width: 80px;
-		height: 80px;
+		width: 50px;
+		height: 50px;
 	}
 	.skills-tools
 		.container
@@ -1551,13 +1670,6 @@ footer .rights div a:hover {
 	.header .container .navbar.sticky {
 		padding: 0 10px;
 	}
-	.projects .container .project-view .project-content .project-img-sector {
-		width: 200px;
-		height: 200px;
-	}
-	.projects .container .project-view .upcomming-project {
-		font-size: 8px;
-	}
 	.skills-tools
 		.container
 		.skills-tools-view
@@ -1571,8 +1683,8 @@ footer .rights div a:hover {
 		.skills-tools-content
 		.img-content
 		img {
-		width: 50px;
-		height: 50px;
+		width: 40px;
+		height: 40px;
 	}
 
 	.contact
